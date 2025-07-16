@@ -1,0 +1,1976 @@
+     +--------------------------------------------------------------------+
+     ¦                • MobaXterm Personal Edition v23.4 •                ¦
+     ¦              (X server, SSH client and network tools)              ¦
+     ¦                                                                    ¦
+     ¦ ? Your computer drives are accessible through the /drives path     ¦
+     ¦ ? Your DISPLAY is set to 192.168.29.62:0.0                         ¦
+     ¦ ? When using SSH, your remote DISPLAY is automatically forwarded   ¦
+     ¦ ? Each command status is specified by a special symbol (? or ?)    ¦
+     ¦                                                                    ¦
+     ¦ • Important:                                                       ¦
+     ¦ This is MobaXterm Personal Edition. The Professional edition       ¦
+     ¦ allows you to customize MobaXterm for your company: you can add    ¦
+     ¦ your own logo, your parameters, your welcome message and generate  ¦
+     ¦ either an MSI installation package or a portable executable.       ¦
+     ¦ We can also modify MobaXterm or develop the plugins you need.      ¦
+     ¦ For more information: https://mobaxterm.mobatek.net/download.html  ¦
+     +--------------------------------------------------------------------+
+
+ ? 21/05/2025 ? ? 12:58.29 ? ? /home/mobaxterm ? ssh multiuse@10.64.0.9
+multiuse@10.64.0.9's password:
+
+                                                                                                                                          ?
+
+ ? 21/05/2025 ? ? 12:59.02 ? ? /home/mobaxterm ? ssh sysadmin@10.72.0.14
+sysadmin@10.72.0.14's password:
+Welcome to Ubuntu 22.04.5 LTS (GNU/Linux 6.8.0-40-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Wed May 21 07:29:42 AM UTC 2025
+
+  System load:  0.08                Swap usage:  0%       Users logged in: 1
+  Usage of /:   31.9% of 435.96GB   Temperature: 48.0 C
+  Memory usage: 3%                  Processes:   946
+
+
+Expanded Security Maintenance for Applications is not enabled.
+
+146 updates can be applied immediately.
+98 of these updates are standard security updates.
+To see these additional updates run: apt list --upgradable
+
+Enable ESM Apps to receive additional future security updates.
+See https://ubuntu.com/esm or run: sudo pro status
+
+Failed to connect to https://changelogs.ubuntu.com/meta-release-lts. Check your Internet connection or proxy settings
+
+
+Last login: Wed May 21 07:22:14 2025 from 10.81.1.26
+sysadmin@kickstart:~$
+sysadmin@kickstart:~$
+sysadmin@kickstart:~$ ssh ceeinfra@192.168.0.42
+
+Attention! Unauthorized remote access is strictly prohibited!
+
+This product processes personal data of users and system administrators, and
+depending on the tenant application, may provide access to sensitive personal
+data of subscribers. Misuse of such data may generate considerable harm to the
+data subject and shall be handled with care. Depending on the local/country
+legislation where the product is deployed and operated the use of this product
+may require providing notice of operator's privacy policy.
+
+(ceeinfra@192.168.0.42) Password:
+Last login: Tue May 20 20:22:32 2025 from 192.168.0.9
+ceeinfra@infra1:~>
+ceeinfra@infra1:~>
+ceeinfra@infra1:~>
+ceeinfra@infra1:~>
+ceeinfra@infra1:~>
+ceeinfra@infra1:~> ssh compute-1-u2
+Warning: Permanently added 'compute-1-u2,192.168.2.100' (ED25519) to the list of known hosts.
+
+Attention! Unauthorized remote access is strictly prohibited!
+
+This product processes personal data of users and system administrators, and
+depending on the tenant application, may provide access to sensitive personal
+data of subscribers. Misuse of such data may generate considerable harm to the
+data subject and shall be handled with care. Depending on the local/country
+legislation where the product is deployed and operated the use of this product
+may require providing notice of operator's privacy policy.
+
+Last login: Tue May 20 20:23:11 2025 from 192.168.2.122
+ceeinfra@compute-1-u2:~>
+ceeinfra@compute-1-u2:~>
+ceeinfra@compute-1-u2:~>
+ceeinfra@compute-1-u2:~>
+ceeinfra@compute-1-u2:~> sudo passwd asmcs02
+New password:
+Retype new password:
+passwd: password updated successfully
+ceeinfra@compute-1-u2:~>
+ceeinfra@compute-1-u2:~>
+ceeinfra@compute-1-u2:~>
+ceeinfra@compute-1-u2:~> exit
+logout
+Connection to compute-1-u2 closed.
+ceeinfra@infra1:~> ssh compute-1-u2
+Warning: Permanently added 'compute-1-u2,192.168.2.100' (ED25519) to the list of known hosts.
+
+Attention! Unauthorized remote access is strictly prohibited!
+
+This product processes personal data of users and system administrators, and
+depending on the tenant application, may provide access to sensitive personal
+data of subscribers. Misuse of such data may generate considerable harm to the
+data subject and shall be handled with care. Depending on the local/country
+legislation where the product is deployed and operated the use of this product
+may require providing notice of operator's privacy policy.
+
+Last login: Tue May 20 20:31:19 2025 from 192.168.2.122
+ceeinfra@compute-1-u2:~>
+ceeinfra@compute-1-u2:~> sudo chage -l asmcs02
+Last password change                                    : May 21, 2025
+Password expires                                        : Aug 19, 2025
+Password inactive                                       : never
+Account expires                                         : never
+Minimum number of days between password change          : 1
+Maximum number of days between password change          : 90
+Number of days of warning before password expires       : 15
+ceeinfra@compute-1-u2:~>
+ceeinfra@compute-1-u2:~>
+ceeinfra@compute-1-u2:~>
+ceeinfra@compute-1-u2:~> sudo chage -M -1 asmcs02
+ceeinfra@compute-1-u2:~> sudo chage -l asmcs02
+Last password change                                    : May 21, 2025
+Password expires                                        : never
+Password inactive                                       : never
+Account expires                                         : never
+Minimum number of days between password change          : 1
+Maximum number of days between password change          : -1
+Number of days of warning before password expires       : 15
+ceeinfra@compute-1-u2:~> exit
+logout
+Connection to compute-1-u2 closed.
+ceeinfra@infra1:~>
+ceeinfra@infra1:~>
+ceeinfra@infra1:~> ssh ceeinfra@192.168.0.20
+Warning: Permanently added '192.168.0.20' (ED25519) to the list of known hosts.
+
+Attention! Unauthorized remote access is strictly prohibited!
+
+This product processes personal data of users and system administrators, and
+depending on the tenant application, may provide access to sensitive personal
+data of subscribers. Misuse of such data may generate considerable harm to the
+data subject and shall be handled with care. Depending on the local/country
+legislation where the product is deployed and operated the use of this product
+may require providing notice of operator's privacy policy.
+
+Last login: Tue May 20 20:34:20 2025 from 192.168.2.122
+ceeinfra@compute-1-u2:~> exit
+logout
+Connection to 192.168.0.20 closed.
+ceeinfra@infra1:~> ssh asmcs02@192.168.0.20
+Warning: Permanently added '192.168.0.20' (ED25519) to the list of known hosts.
+
+Attention! Unauthorized remote access is strictly prohibited!
+
+This product processes personal data of users and system administrators, and
+depending on the tenant application, may provide access to sensitive personal
+data of subscribers. Misuse of such data may generate considerable harm to the
+data subject and shall be handled with care. Depending on the local/country
+legislation where the product is deployed and operated the use of this product
+may require providing notice of operator's privacy policy.
+
+asmcs02@192.168.0.20's password:
+Connection closed by 192.168.0.20 port 22
+ceeinfra@infra1:~>
+ceeinfra@infra1:~>
+ceeinfra@infra1:~>
+ceeinfra@infra1:~> ssh asmcs02@192.168.0.20
+Warning: Permanently added '192.168.0.20' (ED25519) to the list of known hosts.
+
+Attention! Unauthorized remote access is strictly prohibited!
+
+This product processes personal data of users and system administrators, and
+depending on the tenant application, may provide access to sensitive personal
+data of subscribers. Misuse of such data may generate considerable harm to the
+data subject and shall be handled with care. Depending on the local/country
+legislation where the product is deployed and operated the use of this product
+may require providing notice of operator's privacy policy.
+
+asmcs02@192.168.0.20's password:
+asmcs02@compute-1-u2:~>
+asmcs02@compute-1-u2:~>
+asmcs02@compute-1-u2:~>
+asmcs02@compute-1-u2:~>
+asmcs02@compute-1-u2:~>
+asmcs02@compute-1-u2:~>
+asmcs02@compute-1-u2:~> pwd
+/home/asmcs02
+asmcs02@compute-1-u2:~> exit
+logout
+Connection to 192.168.0.20 closed.
+ceeinfra@infra1:~>
+ceeinfra@infra1:~>
+ceeinfra@infra1:~>
+ceeinfra@infra1:~> ssh ceeinfra@192.168.0.20
+Warning: Permanently added '192.168.0.20' (ED25519) to the list of known hosts.
+
+Attention! Unauthorized remote access is strictly prohibited!
+
+This product processes personal data of users and system administrators, and
+depending on the tenant application, may provide access to sensitive personal
+data of subscribers. Misuse of such data may generate considerable harm to the
+data subject and shall be handled with care. Depending on the local/country
+legislation where the product is deployed and operated the use of this product
+may require providing notice of operator's privacy policy.
+
+Last login: Tue May 20 20:41:13 2025 from 192.168.0.42
+ceeinfra@compute-1-u2:~>
+ceeinfra@compute-1-u2:~>
+ceeinfra@compute-1-u2:~>
+ceeinfra@compute-1-u2:~> cat admin-openrc.sh
+# DEPRECATED
+# Clear any old environment that may conflict.
+for key in $( set | awk '{FS="="}  /^OS_/ {print $1}' ); do unset $key ; done
+export OS_PROJECT_DOMAIN_NAME=Default
+export OS_USER_DOMAIN_NAME=Default
+export OS_PROJECT_NAME=admin
+export OS_TENANT_NAME=admin
+export OS_USERNAME=admin
+export OS_PASSWORD=6BD52TYw02Oy3115q681gqC1SCBhrakxqNA8mOZN
+export OS_AUTH_URL=https://cee-int.asmcs2.emc.bluesky.as:5000/v3
+export OS_INTERFACE=internal
+export OS_ENDPOINT_TYPE=internalURL
+export OS_IDENTITY_API_VERSION=3
+export OS_REGION_NAME=cee1.asmcs2
+export OS_AUTH_PLUGIN=password
+export OS_CACERT=/etc/kolla/certificates/ca/ca_nfvi.crt
+ceeinfra@compute-1-u2:~>
+ceeinfra@compute-1-u2:~>
+ceeinfra@compute-1-u2:~>
+ceeinfra@compute-1-u2:~>
+ceeinfra@compute-1-u2:~> cp admin-openrc.sh asmcs02_openrc.sh
+ceeinfra@compute-1-u2:~> ls -ltr
+total 15936
+-rw------- 1 ceeinfra ceeinfra      637 May 20 13:27 admin-openrc.sh
+-rw-r----- 1 ceeinfra ceeinfra 16300544 May 20 15:51 cirros-0.5.2-x86_64-disk.img
+-rw-r----- 1 ceeinfra ceeinfra      181 May 20 17:17 image.qcow2
+-rw------- 1 ceeinfra ceeinfra      576 May 20 18:08 ext_rc
+-rw------- 1 ceeinfra ceeinfra      637 May 20 20:44 asmcs02_openrc.sh
+ceeinfra@compute-1-u2:~>
+ceeinfra@compute-1-u2:~>
+ceeinfra@compute-1-u2:~> vi asmcs02_openrc.sh
+ceeinfra@compute-1-u2:~>
+ceeinfra@compute-1-u2:~>
+ceeinfra@compute-1-u2:~>
+ceeinfra@compute-1-u2:~> cat asmcs02_openrc.sh
+# DEPRECATED
+# Clear any old environment that may conflict.
+for key in $( set | awk '{FS="="}  /^OS_/ {print $1}' ); do unset $key ; done
+export OS_PROJECT_DOMAIN_NAME=Default
+export OS_USER_DOMAIN_NAME=Default
+export OS_PROJECT_NAME=admin
+export OS_TENANT_NAME=admin
+export OS_USERNAME=asmcs02
+export OS_PASSWORD=Ce3Adm1n@cee10.9
+export OS_AUTH_URL=https://cee-int.asmcs2.emc.bluesky.as:5000/v3
+export OS_INTERFACE=internal
+export OS_ENDPOINT_TYPE=internalURL
+export OS_IDENTITY_API_VERSION=3
+export OS_REGION_NAME=cee1.asmcs2
+export OS_AUTH_PLUGIN=password
+export OS_CACERT=/etc/kolla/certificates/ca/ca_nfvi.crt
+ceeinfra@compute-1-u2:~>
+ceeinfra@compute-1-u2:~>
+ceeinfra@compute-1-u2:~> sudo -i
+Directory: /root
+Tue May 20 20:48:38 SST 2025
+compute-1-u2:~ # ls -ltr
+total 32
+drwxr-xr-x 1 root root    0 Mar 15  2022 bin
+drwx------ 1 root root    0 Mar 15  2022 .gnupg
+-rw-r--r-- 1 root root   49 May 17 02:52 .profile
+-rw-r--r-- 1 root root   39 May 17 02:52 .bashrc
+-rw-r--r-- 1 root root   11 May 17 02:52 .vimrc
+drwx------ 1 root root    6 May 20 09:29 .ansible
+-rw------- 1 root root   22 May 20 09:30 .pam_environment
+drwxr-xr-x 1 root root  140 May 20 11:20 .ansible_async
+drwxr-xr-x 1 root root   36 May 20 13:36 .cache
+-rw------- 1 root root 2266 May 20 19:22 .viminfo
+-rw------- 1 root root  125 May 20 19:59 .lesshst
+-rw------- 1 root root 4204 May 20 20:25 .bash_history
+compute-1-u2:~ # cd asmcs02
+-bash: cd: asmcs02: No such file or directory
+compute-1-u2:~ # cd /home/ceeinfra
+compute-1-u2:/home/ceeinfra # ls -ltr
+total 15972
+-rw-r--r-- 1 ceeinfra ceeinfra     1177 May 17 02:52 .bashrc
+-rw-r--r-- 1 ceeinfra ceeinfra       11 May 17 02:52 .vimrc
+-rw-r--r-- 1 ceeinfra ceeinfra     1078 May 17 02:52 .profile
+drwx------ 1 ceeinfra ceeinfra        6 May 20 09:26 .ansible
+drwx------ 1 ceeinfra ceeinfra       42 May 20 09:33 .ssh
+-rw------- 1 ceeinfra ceeinfra      637 May 20 13:27 admin-openrc.sh
+-rw------- 1 ceeinfra ceeinfra      435 May 20 13:27 .profile.openstack_api_cli
+drwxr-x--- 1 ceeinfra ceeinfra      128 May 20 14:16 .novaclient
+-rw-r----- 1 ceeinfra ceeinfra 16300544 May 20 15:51 cirros-0.5.2-x86_64-disk.img
+-rw-r----- 1 ceeinfra ceeinfra      181 May 20 17:17 image.qcow2
+drwxr-x--- 1 ceeinfra ceeinfra       60 May 20 17:34 .cache
+-rw------- 1 ceeinfra ceeinfra       38 May 20 18:03 .lesshst
+-rw------- 1 ceeinfra ceeinfra      576 May 20 18:08 ext_rc
+drwxr-x--- 1 ceeinfra ceeinfra      160 May 20 19:49 .glanceclient
+-rw------- 1 ceeinfra ceeinfra    11505 May 20 20:40 .bash_history
+-rw------- 1 ceeinfra ceeinfra      615 May 20 20:46 asmcs02_openrc.sh
+-rw------- 1 ceeinfra ceeinfra     1916 May 20 20:46 .viminfo
+compute-1-u2:/home/ceeinfra #
+compute-1-u2:/home/ceeinfra #
+compute-1-u2:/home/ceeinfra # cp /home/ceeinfra/asmcs02_openrc.sh /home/asmcs02/
+compute-1-u2:/home/ceeinfra #
+compute-1-u2:/home/ceeinfra # cd /home/asmcs02
+compute-1-u2:/home/asmcs02 # ls -ltr
+total 28
+drwxr-x--- 1 asmcs02 users    0 May 20 20:42 bin
+-rw------- 1 asmcs02 users  584 May 20 20:42 .profile.openstack_api_cli
+-rw-r----- 1 asmcs02 users 1028 May 20 20:42 .profile
+drwxr-x--- 1 asmcs02 users    0 May 20 20:42 .local
+-rw-r----- 1 asmcs02 users  861 May 20 20:42 .inputrc
+drwxr-x--- 1 asmcs02 users    0 May 20 20:42 .fonts
+-rw-r----- 1 asmcs02 users 1637 May 20 20:42 .emacs
+drwxr-x--- 1 asmcs02 users    0 May 20 20:42 .config
+drwxr-x--- 1 asmcs02 users    0 May 20 20:42 .cache
+-rw-r----- 1 asmcs02 users 1177 May 20 20:42 .bashrc
+-rw------- 1 asmcs02 users    9 May 20 20:43 .bash_history
+-rw------- 1 root    root   615 May 20 20:49 asmcs02_openrc.sh
+compute-1-u2:/home/asmcs02 #
+compute-1-u2:/home/asmcs02 #
+compute-1-u2:/home/asmcs02 #
+compute-1-u2:/home/asmcs02 #
+compute-1-u2:/home/asmcs02 # sudo chown asmcs02:users asmcs02_openrc.sh
+compute-1-u2:/home/asmcs02 # ls -ltr
+total 28
+drwxr-x--- 1 asmcs02 users    0 May 20 20:42 bin
+-rw------- 1 asmcs02 users  584 May 20 20:42 .profile.openstack_api_cli
+-rw-r----- 1 asmcs02 users 1028 May 20 20:42 .profile
+drwxr-x--- 1 asmcs02 users    0 May 20 20:42 .local
+-rw-r----- 1 asmcs02 users  861 May 20 20:42 .inputrc
+drwxr-x--- 1 asmcs02 users    0 May 20 20:42 .fonts
+-rw-r----- 1 asmcs02 users 1637 May 20 20:42 .emacs
+drwxr-x--- 1 asmcs02 users    0 May 20 20:42 .config
+drwxr-x--- 1 asmcs02 users    0 May 20 20:42 .cache
+-rw-r----- 1 asmcs02 users 1177 May 20 20:42 .bashrc
+-rw------- 1 asmcs02 users    9 May 20 20:43 .bash_history
+-rw------- 1 asmcs02 users  615 May 20 20:49 asmcs02_openrc.sh
+compute-1-u2:/home/asmcs02 # sudo chmod 777 asmcs02_openrc.sh
+compute-1-u2:/home/asmcs02 # ls -ltr
+total 28
+drwxr-x--- 1 asmcs02 users    0 May 20 20:42 bin
+-rw------- 1 asmcs02 users  584 May 20 20:42 .profile.openstack_api_cli
+-rw-r----- 1 asmcs02 users 1028 May 20 20:42 .profile
+drwxr-x--- 1 asmcs02 users    0 May 20 20:42 .local
+-rw-r----- 1 asmcs02 users  861 May 20 20:42 .inputrc
+drwxr-x--- 1 asmcs02 users    0 May 20 20:42 .fonts
+-rw-r----- 1 asmcs02 users 1637 May 20 20:42 .emacs
+drwxr-x--- 1 asmcs02 users    0 May 20 20:42 .config
+drwxr-x--- 1 asmcs02 users    0 May 20 20:42 .cache
+-rw-r----- 1 asmcs02 users 1177 May 20 20:42 .bashrc
+-rw------- 1 asmcs02 users    9 May 20 20:43 .bash_history
+-rwxrwxrwx 1 asmcs02 users  615 May 20 20:49 asmcs02_openrc.sh
+compute-1-u2:/home/asmcs02 #
+compute-1-u2:/home/asmcs02 #
+compute-1-u2:/home/asmcs02 #
+compute-1-u2:/home/asmcs02 #
+compute-1-u2:/home/asmcs02 # exit
+logout
+ceeinfra@compute-1-u2:~>
+ceeinfra@compute-1-u2:~>
+ceeinfra@compute-1-u2:~>
+ceeinfra@compute-1-u2:~> exit
+logout
+Connection to 192.168.0.20 closed.
+ceeinfra@infra1:~> ssh asmcs02@192.168.0.20
+Warning: Permanently added '192.168.0.20' (ED25519) to the list of known hosts.
+
+Attention! Unauthorized remote access is strictly prohibited!
+
+This product processes personal data of users and system administrators, and
+depending on the tenant application, may provide access to sensitive personal
+data of subscribers. Misuse of such data may generate considerable harm to the
+data subject and shall be handled with care. Depending on the local/country
+legislation where the product is deployed and operated the use of this product
+may require providing notice of operator's privacy policy.
+
+asmcs02@192.168.0.20's password:
+Last login: Tue May 20 20:42:45 2025 from 192.168.0.42
+asmcs02@compute-1-u2:~>
+asmcs02@compute-1-u2:~>
+asmcs02@compute-1-u2:~>
+asmcs02@compute-1-u2:~>
+asmcs02@compute-1-u2:~> ls -ltr
+total 4
+drwxr-x--- 1 asmcs02 users   0 May 20 20:42 bin
+-rwxrwxrwx 1 asmcs02 users 615 May 20 20:49 asmcs02_openrc.sh
+asmcs02@compute-1-u2:~> source asmcs02_openrc.sh
+asmcs02@compute-1-u2:~>
+asmcs02@compute-1-u2:~>
+asmcs02@compute-1-u2:~>
+asmcs02@compute-1-u2:~> openstack network agent list
+The request you have made requires authentication. (HTTP 401) (Request-ID: req-49bb0d91-d78a-4ec2-a616-6c091d85bee2)
+asmcs02@compute-1-u2:~> exit
+logout
+Connection to 192.168.0.20 closed.
+ceeinfra@infra1:~>
+ceeinfra@infra1:~> ssh ceeinfra@192.168.0.20
+Warning: Permanently added '192.168.0.20' (ED25519) to the list of known hosts.
+
+Attention! Unauthorized remote access is strictly prohibited!
+
+This product processes personal data of users and system administrators, and
+depending on the tenant application, may provide access to sensitive personal
+data of subscribers. Misuse of such data may generate considerable harm to the
+data subject and shall be handled with care. Depending on the local/country
+legislation where the product is deployed and operated the use of this product
+may require providing notice of operator's privacy policy.
+
+Last login: Tue May 20 20:43:15 2025 from 192.168.0.42
+ceeinfra@compute-1-u2:~>
+ceeinfra@compute-1-u2:~>
+ceeinfra@compute-1-u2:~> ls -ltr
+total 15936
+-rw------- 1 ceeinfra ceeinfra      637 May 20 13:27 admin-openrc.sh
+-rw-r----- 1 ceeinfra ceeinfra 16300544 May 20 15:51 cirros-0.5.2-x86_64-disk.img
+-rw-r----- 1 ceeinfra ceeinfra      181 May 20 17:17 image.qcow2
+-rw------- 1 ceeinfra ceeinfra      576 May 20 18:08 ext_rc
+-rw------- 1 ceeinfra ceeinfra      615 May 20 20:46 asmcs02_openrc.sh
+ceeinfra@compute-1-u2:~> source admin-openrc.sh
+ceeinfra@compute-1-u2:~>
+ceeinfra@compute-1-u2:~>
+ceeinfra@compute-1-u2:~>
+ceeinfra@compute-1-u2:~> openstack user list
++----------------------------------+-----------+
+| ID                               | Name      |
++----------------------------------+-----------+
+| 9932195ddc104b5e994da38b30c2973d | admin     |
+| 244d64343152426596c48ba3defb304a | placement |
+| 2b4bdb2c85a34ce087cd0b5e6d1b304d | swift     |
+| 4de7f6d66ca54c78a44b4dcf21738f79 | aetos     |
+| 20d5f4356b6b45a28626fe0f4865d37b | barbican  |
+| c6fb5c9b5ae145748aad5ed5d9ae8737 | sa_api    |
+| e7e2f50a700c44dda4f42db9ade38705 | cinder    |
+| 779d0e7db0ac4860ab810d345b4d7ed8 | glance    |
+| ed6d77fc4ada4d9bb24c8a578f6cb522 | nova      |
+| 888eb09b84d7403ab784208024fdfa5c | neutron   |
+| 64b55a0c73624208a46f454d807f24c7 | cmha      |
+| e972fb41aef34223a19f29d6d40a006a | heat      |
++----------------------------------+-----------+
+ceeinfra@compute-1-u2:~> openstack user create asmcs02 --project admin --password-prompt
+User Password:
+Repeat User Password:
++---------------------+----------------------------------+
+| Field               | Value                            |
++---------------------+----------------------------------+
+| default_project_id  | c276127983674835b732d255bc76715f |
+| domain_id           | default                          |
+| enabled             | True                             |
+| id                  | 54067a6b602042d6b319b40c183ad39f |
+| name                | asmcs02                          |
+| options             | {}                               |
+| password_expires_at | 2025-05-21T07:57:50.088100       |
++---------------------+----------------------------------+
+ceeinfra@compute-1-u2:~> openstack user list
++----------------------------------+-----------+
+| ID                               | Name      |
++----------------------------------+-----------+
+| 9932195ddc104b5e994da38b30c2973d | admin     |
+| 244d64343152426596c48ba3defb304a | placement |
+| 2b4bdb2c85a34ce087cd0b5e6d1b304d | swift     |
+| 4de7f6d66ca54c78a44b4dcf21738f79 | aetos     |
+| 20d5f4356b6b45a28626fe0f4865d37b | barbican  |
+| c6fb5c9b5ae145748aad5ed5d9ae8737 | sa_api    |
+| e7e2f50a700c44dda4f42db9ade38705 | cinder    |
+| 779d0e7db0ac4860ab810d345b4d7ed8 | glance    |
+| ed6d77fc4ada4d9bb24c8a578f6cb522 | nova      |
+| 888eb09b84d7403ab784208024fdfa5c | neutron   |
+| 64b55a0c73624208a46f454d807f24c7 | cmha      |
+| e972fb41aef34223a19f29d6d40a006a | heat      |
+| 54067a6b602042d6b319b40c183ad39f | asmcs02   |
++----------------------------------+-----------+
+ceeinfra@compute-1-u2:~> exit
+logout
+Connection to 192.168.0.20 closed.
+ceeinfra@infra1:~> exit
+logout
+Connection to 192.168.0.42 closed.
+sysadmin@kickstart:~$ ssh ceeinfra@192.168.0.42
+
+Attention! Unauthorized remote access is strictly prohibited!
+
+This product processes personal data of users and system administrators, and
+depending on the tenant application, may provide access to sensitive personal
+data of subscribers. Misuse of such data may generate considerable harm to the
+data subject and shall be handled with care. Depending on the local/country
+legislation where the product is deployed and operated the use of this product
+may require providing notice of operator's privacy policy.
+
+(ceeinfra@192.168.0.42) Password:
+Last login: Tue May 20 20:30:21 2025 from 192.168.0.9
+ceeinfra@infra1:~>
+ceeinfra@infra1:~>
+ceeinfra@infra1:~> ssh asmcs02@192.168.0.20
+Warning: Permanently added '192.168.0.20' (ED25519) to the list of known hosts.
+
+Attention! Unauthorized remote access is strictly prohibited!
+
+This product processes personal data of users and system administrators, and
+depending on the tenant application, may provide access to sensitive personal
+data of subscribers. Misuse of such data may generate considerable harm to the
+data subject and shall be handled with care. Depending on the local/country
+legislation where the product is deployed and operated the use of this product
+may require providing notice of operator's privacy policy.
+
+asmcs02@192.168.0.20's password:
+Last login: Tue May 20 20:51:51 2025 from 192.168.0.42
+asmcs02@compute-1-u2:~> ls -ltr
+total 4
+drwxr-x--- 1 asmcs02 users   0 May 20 20:42 bin
+-rwxrwxrwx 1 asmcs02 users 615 May 20 20:49 asmcs02_openrc.sh
+asmcs02@compute-1-u2:~>
+asmcs02@compute-1-u2:~>
+asmcs02@compute-1-u2:~> source asmcs02_openrc.sh
+asmcs02@compute-1-u2:~> openstack volume service list
+The password is expired and needs to be changed for user: 54067a6b602042d6b319b40c183ad39f. (HTTP 401) (Request-ID: req-15693229-06b6-415f-9fea-88b08b37c8d6)
+asmcs02@compute-1-u2:~>
+asmcs02@compute-1-u2:~>
+asmcs02@compute-1-u2:~> exit
+logout
+Connection to 192.168.0.20 closed.
+ceeinfra@infra1:~> ssh ceeinfra@192.168.0.20
+Warning: Permanently added '192.168.0.20' (ED25519) to the list of known hosts.
+
+Attention! Unauthorized remote access is strictly prohibited!
+
+This product processes personal data of users and system administrators, and
+depending on the tenant application, may provide access to sensitive personal
+data of subscribers. Misuse of such data may generate considerable harm to the
+data subject and shall be handled with care. Depending on the local/country
+legislation where the product is deployed and operated the use of this product
+may require providing notice of operator's privacy policy.
+
+Last login: Tue May 20 20:54:20 2025 from 192.168.0.42
+ceeinfra@compute-1-u2:~>
+ceeinfra@compute-1-u2:~>
+ceeinfra@compute-1-u2:~> ls -ltr
+total 15936
+-rw------- 1 ceeinfra ceeinfra      637 May 20 13:27 admin-openrc.sh
+-rw-r----- 1 ceeinfra ceeinfra 16300544 May 20 15:51 cirros-0.5.2-x86_64-disk.img
+-rw-r----- 1 ceeinfra ceeinfra      181 May 20 17:17 image.qcow2
+-rw------- 1 ceeinfra ceeinfra      576 May 20 18:08 ext_rc
+-rw------- 1 ceeinfra ceeinfra      615 May 20 20:46 asmcs02_openrc.sh
+ceeinfra@compute-1-u2:~>
+ceeinfra@compute-1-u2:~>
+ceeinfra@compute-1-u2:~>
+ceeinfra@compute-1-u2:~> source admin-openrc.sh
+ceeinfra@compute-1-u2:~>
+ceeinfra@compute-1-u2:~>
+ceeinfra@compute-1-u2:~> openstack user show asmcs02
++---------------------+----------------------------------+
+| Field               | Value                            |
++---------------------+----------------------------------+
+| default_project_id  | c276127983674835b732d255bc76715f |
+| domain_id           | default                          |
+| enabled             | True                             |
+| id                  | 54067a6b602042d6b319b40c183ad39f |
+| name                | asmcs02                          |
+| options             | {}                               |
+| password_expires_at | 2025-05-21T07:57:50.088100       |
++---------------------+----------------------------------+
+ceeinfra@compute-1-u2:~>
+ceeinfra@compute-1-u2:~>
+ceeinfra@compute-1-u2:~>
+ceeinfra@compute-1-u2:~>
+ceeinfra@compute-1-u2:~> openstack user set asmcs02 --ignore-password-expiry
+ceeinfra@compute-1-u2:~> openstack user show asmcs02
++---------------------+----------------------------------+
+| Field               | Value                            |
++---------------------+----------------------------------+
+| default_project_id  | c276127983674835b732d255bc76715f |
+| domain_id           | default                          |
+| enabled             | True                             |
+| id                  | 54067a6b602042d6b319b40c183ad39f |
+| name                | asmcs02                          |
+| options             | {'ignore_password_expiry': True} |
+| password_expires_at | 2025-05-21T07:57:50.088100       |
++---------------------+----------------------------------+
+ceeinfra@compute-1-u2:~>
+ceeinfra@compute-1-u2:~> openstack user set asmcs02 --ignore-lockout-failure-attempts
+ceeinfra@compute-1-u2:~> openstack user show asmcs02
++---------------------+---------------------------------------------------------------------------+
+| Field               | Value                                                                     |
++---------------------+---------------------------------------------------------------------------+
+| default_project_id  | c276127983674835b732d255bc76715f                                          |
+| domain_id           | default                                                                   |
+| enabled             | True                                                                      |
+| id                  | 54067a6b602042d6b319b40c183ad39f                                          |
+| name                | asmcs02                                                                   |
+| options             | {'ignore_password_expiry': True, 'ignore_lockout_failure_attempts': True} |
+| password_expires_at | 2025-05-21T07:57:50.088100                                                |
++---------------------+---------------------------------------------------------------------------+
+ceeinfra@compute-1-u2:~> openstack user set asmcs02 --disable-lock-password
+ceeinfra@compute-1-u2:~> openstack user show asmcs02
++---------------------+---------------------------------------------------------------------------------------------------+
+| Field               | Value                                                                                             |
++---------------------+---------------------------------------------------------------------------------------------------+
+| default_project_id  | c276127983674835b732d255bc76715f                                                                  |
+| domain_id           | default                                                                                           |
+| enabled             | True                                                                                              |
+| id                  | 54067a6b602042d6b319b40c183ad39f                                                                  |
+| name                | asmcs02                                                                                           |
+| options             | {'ignore_password_expiry': True, 'ignore_lockout_failure_attempts': True, 'lock_password': False} |
+| password_expires_at | 2025-05-21T07:57:50.088100                                                                        |
++---------------------+---------------------------------------------------------------------------------------------------+
+ceeinfra@compute-1-u2:~> exit
+logout
+Connection to 192.168.0.20 closed.
+ceeinfra@infra1:~>
+ceeinfra@infra1:~>
+ceeinfra@infra1:~>
+ceeinfra@infra1:~>
+ceeinfra@infra1:~> ssh asmcs02@192.168.0.20
+Warning: Permanently added '192.168.0.20' (ED25519) to the list of known hosts.
+
+Attention! Unauthorized remote access is strictly prohibited!
+
+This product processes personal data of users and system administrators, and
+depending on the tenant application, may provide access to sensitive personal
+data of subscribers. Misuse of such data may generate considerable harm to the
+data subject and shall be handled with care. Depending on the local/country
+legislation where the product is deployed and operated the use of this product
+may require providing notice of operator's privacy policy.
+
+asmcs02@192.168.0.20's password:
+Last login: Tue May 20 20:59:07 2025 from 192.168.0.42
+asmcs02@compute-1-u2:~>
+asmcs02@compute-1-u2:~>
+asmcs02@compute-1-u2:~> ls -ltr
+total 4
+drwxr-x--- 1 asmcs02 users   0 May 20 20:42 bin
+-rwxrwxrwx 1 asmcs02 users 615 May 20 20:49 asmcs02_openrc.sh
+asmcs02@compute-1-u2:~> source asmcs02_openrc.sh
+asmcs02@compute-1-u2:~>
+asmcs02@compute-1-u2:~>
+asmcs02@compute-1-u2:~> openstack volume service list
+The request you have made requires authentication. (HTTP 401) (Request-ID: req-eda6b1b2-73b6-4a53-8e72-41587eb44efe)
+asmcs02@compute-1-u2:~> exit
+logout
+Connection to 192.168.0.20 closed.
+ceeinfra@infra1:~>
+ceeinfra@infra1:~>
+ceeinfra@infra1:~>
+ceeinfra@infra1:~> ssh ceeinfra@192.168.0.20
+Warning: Permanently added '192.168.0.20' (ED25519) to the list of known hosts.
+
+Attention! Unauthorized remote access is strictly prohibited!
+
+This product processes personal data of users and system administrators, and
+depending on the tenant application, may provide access to sensitive personal
+data of subscribers. Misuse of such data may generate considerable harm to the
+data subject and shall be handled with care. Depending on the local/country
+legislation where the product is deployed and operated the use of this product
+may require providing notice of operator's privacy policy.
+
+Last login: Tue May 20 21:03:48 2025 from 192.168.2.122
+ceeinfra@compute-1-u2:~>
+ceeinfra@compute-1-u2:~>
+ceeinfra@compute-1-u2:~> ls -ltr
+total 15936
+-rw------- 1 ceeinfra ceeinfra      637 May 20 13:27 admin-openrc.sh
+-rw-r----- 1 ceeinfra ceeinfra 16300544 May 20 15:51 cirros-0.5.2-x86_64-disk.img
+-rw-r----- 1 ceeinfra ceeinfra      181 May 20 17:17 image.qcow2
+-rw------- 1 ceeinfra ceeinfra      576 May 20 18:08 ext_rc
+-rw------- 1 ceeinfra ceeinfra      615 May 20 20:46 asmcs02_openrc.sh
+ceeinfra@compute-1-u2:~>
+ceeinfra@compute-1-u2:~>
+ceeinfra@compute-1-u2:~> source admin-openrc.sh
+ceeinfra@compute-1-u2:~>
+ceeinfra@compute-1-u2:~>
+ceeinfra@compute-1-u2:~> openstack role list
++----------------------------------+---------------------------+
+| ID                               | Name                      |
++----------------------------------+---------------------------+
+| 04ce944d87a246ea80c5f5a0755193c9 | heat_stack_owner          |
+| 081475f56da748d991d32e7c18434112 | audit                     |
+| 092419cbdd564897bec888b8c2f9b0d6 | sa_api                    |
+| 22dabbe7f1494640ad77c8648a6a7d79 | watchmen                  |
+| 282529abd349401ba4b0e5e84e75eac7 | ResellerAdmin             |
+| 2a68e5fc9079400bb30d305c40669416 | _member_                  |
+| 4587318f7b05436a993814788db473a3 | admin                     |
+| 562261d26e4d454683f821a581cfd61f | pm_reporter               |
+| 62f1b4c761864a9a8115a09aacf03567 | aetos                     |
+| 6c1389ee503546cab303a13fd4e51633 | creator                   |
+| 86720ab20b7240c5bf90681a0c384bfb | key-manager:service-admin |
+| 978f2de1d961400aaa0ae902587ef5ea | flow_trace                |
+| aa326a03f75444088a21cb64cf18836b | host_info                 |
+| ced211ed0be54284ad44e17f291afd37 | reader                    |
+| d767ca3d51fc4d0e92b3fb7d2e145ed8 | notifier                  |
+| e361ccecc7be4845871949fd74dabbf7 | observer                  |
+| ec007240f057403790ebfd619a6eb82d | member                    |
+| f234cb227d364922ac78978ef97d588c | heat_stack_user           |
++----------------------------------+---------------------------+
+ceeinfra@compute-1-u2:~> openstack role add --user asmcs02 --project admin admin
+ceeinfra@compute-1-u2:~> openstack role list
++----------------------------------+---------------------------+
+| ID                               | Name                      |
++----------------------------------+---------------------------+
+| 04ce944d87a246ea80c5f5a0755193c9 | heat_stack_owner          |
+| 081475f56da748d991d32e7c18434112 | audit                     |
+| 092419cbdd564897bec888b8c2f9b0d6 | sa_api                    |
+| 22dabbe7f1494640ad77c8648a6a7d79 | watchmen                  |
+| 282529abd349401ba4b0e5e84e75eac7 | ResellerAdmin             |
+| 2a68e5fc9079400bb30d305c40669416 | _member_                  |
+| 4587318f7b05436a993814788db473a3 | admin                     |
+| 562261d26e4d454683f821a581cfd61f | pm_reporter               |
+| 62f1b4c761864a9a8115a09aacf03567 | aetos                     |
+| 6c1389ee503546cab303a13fd4e51633 | creator                   |
+| 86720ab20b7240c5bf90681a0c384bfb | key-manager:service-admin |
+| 978f2de1d961400aaa0ae902587ef5ea | flow_trace                |
+| aa326a03f75444088a21cb64cf18836b | host_info                 |
+| ced211ed0be54284ad44e17f291afd37 | reader                    |
+| d767ca3d51fc4d0e92b3fb7d2e145ed8 | notifier                  |
+| e361ccecc7be4845871949fd74dabbf7 | observer                  |
+| ec007240f057403790ebfd619a6eb82d | member                    |
+| f234cb227d364922ac78978ef97d588c | heat_stack_user           |
++----------------------------------+---------------------------+
+ceeinfra@compute-1-u2:~> exit
+logout
+Connection to 192.168.0.20 closed.
+ceeinfra@infra1:~>
+ceeinfra@infra1:~>
+ceeinfra@infra1:~> ssh asmcs02@192.168.0.20
+Warning: Permanently added '192.168.0.20' (ED25519) to the list of known hosts.
+
+Attention! Unauthorized remote access is strictly prohibited!
+
+This product processes personal data of users and system administrators, and
+depending on the tenant application, may provide access to sensitive personal
+data of subscribers. Misuse of such data may generate considerable harm to the
+data subject and shall be handled with care. Depending on the local/country
+legislation where the product is deployed and operated the use of this product
+may require providing notice of operator's privacy policy.
+
+asmcs02@192.168.0.20's password:
+Last login: Tue May 20 21:04:54 2025 from 192.168.0.42
+asmcs02@compute-1-u2:~>
+asmcs02@compute-1-u2:~>
+asmcs02@compute-1-u2:~>
+asmcs02@compute-1-u2:~> ls -ltr
+total 4
+drwxr-x--- 1 asmcs02 users   0 May 20 20:42 bin
+-rwxrwxrwx 1 asmcs02 users 615 May 20 20:49 asmcs02_openrc.sh
+asmcs02@compute-1-u2:~>
+asmcs02@compute-1-u2:~>
+asmcs02@compute-1-u2:~>
+asmcs02@compute-1-u2:~> source asmcs02_openrc.sh
+asmcs02@compute-1-u2:~> openstack volume service list
++------------------+------------------------------------+------+---------+-------+----------------------------+
+| Binary           | Host                               | Zone | Status  | State | Updated At                 |
++------------------+------------------------------------+------+---------+-------+----------------------------+
+| cinder-scheduler | compute-1-u3.asmcs2.emc.bluesky.as | nova | enabled | up    | 2025-05-21T08:09:26.000000 |
+| cinder-scheduler | compute-1-u2.asmcs2.emc.bluesky.as | nova | enabled | up    | 2025-05-21T08:09:28.000000 |
+| cinder-scheduler | compute-1-u4.asmcs2.emc.bluesky.as | nova | enabled | up    | 2025-05-21T08:09:25.000000 |
+| cinder-backup    | compute-1-u2.asmcs2.emc.bluesky.as | nova | enabled | up    | 2025-05-21T08:09:27.000000 |
+| cinder-backup    | compute-1-u3.asmcs2.emc.bluesky.as | nova | enabled | up    | 2025-05-21T08:09:26.000000 |
+| cinder-backup    | compute-1-u4.asmcs2.emc.bluesky.as | nova | enabled | up    | 2025-05-21T08:09:25.000000 |
+| cinder-volume    | vxsds-1:volumes@vxsds-1            | nova | enabled | up    | 2025-05-21T08:09:27.000000 |
++------------------+------------------------------------+------+---------+-------+----------------------------+
+asmcs02@compute-1-u2:~> ls -ltr
+total 4
+drwxr-x--- 1 asmcs02 users   0 May 20 20:42 bin
+-rwxrwxrwx 1 asmcs02 users 615 May 20 20:49 asmcs02_openrc.sh
+asmcs02@compute-1-u2:~>
+asmcs02@compute-1-u2:~>
+asmcs02@compute-1-u2:~>
+asmcs02@compute-1-u2:~> cat asmcs02_openrc.sh
+# DEPRECATED
+# Clear any old environment that may conflict.
+for key in $( set | awk '{FS="="}  /^OS_/ {print $1}' ); do unset $key ; done
+export OS_PROJECT_DOMAIN_NAME=Default
+export OS_USER_DOMAIN_NAME=Default
+export OS_PROJECT_NAME=admin
+export OS_TENANT_NAME=admin
+export OS_USERNAME=asmcs02
+export OS_PASSWORD=Ce3Adm1n@cee10.9
+export OS_AUTH_URL=https://cee-int.asmcs2.emc.bluesky.as:5000/v3
+export OS_INTERFACE=internal
+export OS_ENDPOINT_TYPE=internalURL
+export OS_IDENTITY_API_VERSION=3
+export OS_REGION_NAME=cee1.asmcs2
+export OS_AUTH_PLUGIN=password
+export OS_CACERT=/etc/kolla/certificates/ca/ca_nfvi.crt
+asmcs02@compute-1-u2:~>
+asmcs02@compute-1-u2:~>
+asmcs02@compute-1-u2:~>
+asmcs02@compute-1-u2:~> exit
+logout
+Connection to 192.168.0.20 closed.
+ceeinfra@infra1:~> ssh asmcs02@192.168.0.21
+Warning: Permanently added '192.168.0.21' (ED25519) to the list of known hosts.
+
+Attention! Unauthorized remote access is strictly prohibited!
+
+This product processes personal data of users and system administrators, and
+depending on the tenant application, may provide access to sensitive personal
+data of subscribers. Misuse of such data may generate considerable harm to the
+data subject and shall be handled with care. Depending on the local/country
+legislation where the product is deployed and operated the use of this product
+may require providing notice of operator's privacy policy.
+
+asmcs02@192.168.0.21's password:
+Permission denied, please try again.
+asmcs02@192.168.0.21's password:
+Received disconnect from 192.168.0.21 port 22:2: Too many authentication failures
+Disconnected from 192.168.0.21 port 22
+ceeinfra@infra1:~>
+ceeinfra@infra1:~>
+ceeinfra@infra1:~>
+ceeinfra@infra1:~> ssh asmcs02@192.168.0.21
+Warning: Permanently added '192.168.0.21' (ED25519) to the list of known hosts.
+
+Attention! Unauthorized remote access is strictly prohibited!
+
+This product processes personal data of users and system administrators, and
+depending on the tenant application, may provide access to sensitive personal
+data of subscribers. Misuse of such data may generate considerable harm to the
+data subject and shall be handled with care. Depending on the local/country
+legislation where the product is deployed and operated the use of this product
+may require providing notice of operator's privacy policy.
+
+asmcs02@192.168.0.21's password:
+Permission denied, please try again.
+asmcs02@192.168.0.21's password:
+
+ceeinfra@infra1:~>
+ceeinfra@infra1:~>
+ceeinfra@infra1:~>
+ceeinfra@infra1:~> ssh ceeinfra@192.168.0.20
+Warning: Permanently added '192.168.0.20' (ED25519) to the list of known hosts.
+
+Attention! Unauthorized remote access is strictly prohibited!
+
+This product processes personal data of users and system administrators, and
+depending on the tenant application, may provide access to sensitive personal
+data of subscribers. Misuse of such data may generate considerable harm to the
+data subject and shall be handled with care. Depending on the local/country
+legislation where the product is deployed and operated the use of this product
+may require providing notice of operator's privacy policy.
+
+Last login: Tue May 20 21:06:48 2025 from 192.168.0.42
+ceeinfra@compute-1-u2:~>
+ceeinfra@compute-1-u2:~>
+ceeinfra@compute-1-u2:~>
+ceeinfra@compute-1-u2:~> sudo -i
+Directory: /root
+Tue May 20 21:14:07 SST 2025
+compute-1-u2:~ #
+compute-1-u2:~ #
+compute-1-u2:~ #
+compute-1-u2:~ # ls -ltr
+total 32
+drwxr-xr-x 1 root root    0 Mar 15  2022 bin
+drwx------ 1 root root    0 Mar 15  2022 .gnupg
+-rw-r--r-- 1 root root   49 May 17 02:52 .profile
+-rw-r--r-- 1 root root   39 May 17 02:52 .bashrc
+-rw-r--r-- 1 root root   11 May 17 02:52 .vimrc
+drwx------ 1 root root    6 May 20 09:29 .ansible
+-rw------- 1 root root   22 May 20 09:30 .pam_environment
+drwxr-xr-x 1 root root  140 May 20 11:20 .ansible_async
+drwxr-xr-x 1 root root   36 May 20 13:36 .cache
+-rw------- 1 root root 2266 May 20 19:22 .viminfo
+-rw------- 1 root root  125 May 20 19:59 .lesshst
+-rw------- 1 root root 4566 May 20 20:51 .bash_history
+compute-1-u2:~ # cd /home/asmcs02
+compute-1-u2:/home/asmcs02 # ls -ltr
+total 28
+drwxr-x--- 1 asmcs02 users    0 May 20 20:42 bin
+-rw------- 1 asmcs02 users  584 May 20 20:42 .profile.openstack_api_cli
+-rw-r----- 1 asmcs02 users 1028 May 20 20:42 .profile
+drwxr-x--- 1 asmcs02 users    0 May 20 20:42 .local
+-rw-r----- 1 asmcs02 users  861 May 20 20:42 .inputrc
+drwxr-x--- 1 asmcs02 users    0 May 20 20:42 .fonts
+-rw-r----- 1 asmcs02 users 1637 May 20 20:42 .emacs
+drwxr-x--- 1 asmcs02 users    0 May 20 20:42 .config
+-rw-r----- 1 asmcs02 users 1177 May 20 20:42 .bashrc
+-rwxrwxrwx 1 asmcs02 users  615 May 20 20:49 asmcs02_openrc.sh
+drwxr-x--- 1 asmcs02 users   36 May 20 20:52 .cache
+-rw------- 1 asmcs02 users  310 May 20 21:13 .bash_history
+compute-1-u2:/home/asmcs02 #
+compute-1-u2:/home/asmcs02 #
+compute-1-u2:/home/asmcs02 # exit
+logout
+ceeinfra@compute-1-u2:~> exit
+logout
+Connection to 192.168.0.20 closed.
+ceeinfra@infra1:~> ssh ceeinfra@192.168.0.21
+Warning: Permanently added '192.168.0.21' (ED25519) to the list of known hosts.
+
+Attention! Unauthorized remote access is strictly prohibited!
+
+This product processes personal data of users and system administrators, and
+depending on the tenant application, may provide access to sensitive personal
+data of subscribers. Misuse of such data may generate considerable harm to the
+data subject and shall be handled with care. Depending on the local/country
+legislation where the product is deployed and operated the use of this product
+may require providing notice of operator's privacy policy.
+
+Last login: Tue May 20 19:19:53 2025 from 192.168.2.122
+ceeinfra@compute-1-u3:~> sudo -i
+Directory: /root
+Tue May 20 21:15:40 SST 2025
+compute-1-u3:~ #
+compute-1-u3:~ #
+compute-1-u3:~ # cd /home
+compute-1-u3:/home # cd asmcs02
+-bash: cd: asmcs02: No such file or directory
+compute-1-u3:/home # ls -ltr
+total 0
+drwxr-x--- 1 ceeinfra ceeinfra 174 May 20 14:34 ceeinfra
+compute-1-u3:/home #
+compute-1-u3:/home #
+compute-1-u3:/home #
+compute-1-u3:/home # exit
+logout
+ceeinfra@compute-1-u3:~>
+ceeinfra@compute-1-u3:~>
+ceeinfra@compute-1-u3:~>
+ceeinfra@compute-1-u3:~>
+ceeinfra@compute-1-u3:~> ls -ltr
+total 4
+-rw------- 1 ceeinfra ceeinfra 637 May 20 13:27 admin-openrc.sh
+ceeinfra@compute-1-u3:~>
+ceeinfra@compute-1-u3:~>
+ceeinfra@compute-1-u3:~>
+ceeinfra@compute-1-u3:~> sudo useradd asmcs02
+ceeinfra@compute-1-u3:~> sudo passwd asmcs02
+New password:
+Retype new password:
+passwd: password updated successfully
+ceeinfra@compute-1-u3:~>
+ceeinfra@compute-1-u3:~>
+ceeinfra@compute-1-u3:~>
+ceeinfra@compute-1-u3:~> sudo chage -l asmcs02
+Last password change                                    : May 21, 2025
+Password expires                                        : Aug 19, 2025
+Password inactive                                       : never
+Account expires                                         : never
+Minimum number of days between password change          : 1
+Maximum number of days between password change          : 90
+Number of days of warning before password expires       : 15
+ceeinfra@compute-1-u3:~> sudo chage -M -1 asmcs02
+ceeinfra@compute-1-u3:~> sudo chage -l asmcs02
+Last password change                                    : May 21, 2025
+Password expires                                        : never
+Password inactive                                       : never
+Account expires                                         : never
+Minimum number of days between password change          : 1
+Maximum number of days between password change          : -1
+Number of days of warning before password expires       : 15
+ceeinfra@compute-1-u3:~>
+ceeinfra@compute-1-u3:~>
+ceeinfra@compute-1-u3:~> vi asmcs02_openrc.sh
+ceeinfra@compute-1-u3:~>
+ceeinfra@compute-1-u3:~>
+ceeinfra@compute-1-u3:~>
+ceeinfra@compute-1-u3:~> ls -ltr
+total 8
+-rw------- 1 ceeinfra ceeinfra 637 May 20 13:27 admin-openrc.sh
+-rw-r----- 1 ceeinfra ceeinfra 615 May 20 21:21 asmcs02_openrc.sh
+ceeinfra@compute-1-u3:~>
+ceeinfra@compute-1-u3:~>
+ceeinfra@compute-1-u3:~>
+ceeinfra@compute-1-u3:~> sudo -i
+Directory: /root
+Tue May 20 21:22:52 SST 2025
+compute-1-u3:~ #
+compute-1-u3:~ #
+compute-1-u3:~ # cp /home/ceeinfra/asmcs02_openrc.sh /home/asmcs02/
+cp: cannot create regular file '/home/asmcs02/': Not a directory
+compute-1-u3:~ # exit
+logout
+ceeinfra@compute-1-u3:~> exit
+logout
+Connection to 192.168.0.21 closed.
+ceeinfra@infra1:~> ssh asmcs02@192.168.0.21
+Warning: Permanently added '192.168.0.21' (ED25519) to the list of known hosts.
+
+Attention! Unauthorized remote access is strictly prohibited!
+
+This product processes personal data of users and system administrators, and
+depending on the tenant application, may provide access to sensitive personal
+data of subscribers. Misuse of such data may generate considerable harm to the
+data subject and shall be handled with care. Depending on the local/country
+legislation where the product is deployed and operated the use of this product
+may require providing notice of operator's privacy policy.
+
+asmcs02@192.168.0.21's password:
+Last failed login: Tue May 20 21:13:39 SST 2025 from 192.168.0.42 on ssh:notty
+There were 5 failed login attempts since the last successful login.
+asmcs02@compute-1-u3:~>
+asmcs02@compute-1-u3:~>
+asmcs02@compute-1-u3:~>
+asmcs02@compute-1-u3:~>
+asmcs02@compute-1-u3:~>
+asmcs02@compute-1-u3:~> pwd
+/home/asmcs02
+asmcs02@compute-1-u3:~>
+asmcs02@compute-1-u3:~>
+asmcs02@compute-1-u3:~>
+asmcs02@compute-1-u3:~>
+asmcs02@compute-1-u3:~> exit
+logout
+Connection to 192.168.0.21 closed.
+ceeinfra@infra1:~> ssh ceeinfra@192.168.0.21
+Warning: Permanently added '192.168.0.21' (ED25519) to the list of known hosts.
+
+Attention! Unauthorized remote access is strictly prohibited!
+
+This product processes personal data of users and system administrators, and
+depending on the tenant application, may provide access to sensitive personal
+data of subscribers. Misuse of such data may generate considerable harm to the
+data subject and shall be handled with care. Depending on the local/country
+legislation where the product is deployed and operated the use of this product
+may require providing notice of operator's privacy policy.
+
+Last login: Tue May 20 21:15:36 2025 from 192.168.0.42
+ceeinfra@compute-1-u3:~>
+ceeinfra@compute-1-u3:~>
+ceeinfra@compute-1-u3:~> sudo -i
+Directory: /root
+Tue May 20 21:25:03 SST 2025
+compute-1-u3:~ # cd /home
+compute-1-u3:/home # ls -ltr
+total 0
+drwxr-x--- 1 ceeinfra ceeinfra 224 May 20 21:21 ceeinfra
+drwxr-x--- 1 asmcs02  users    192 May 20 21:24 asmcs02
+compute-1-u3:/home # cd ceeinfra
+compute-1-u3:/home/ceeinfra # ls -ltr
+total 32
+-rw-r--r-- 1 ceeinfra ceeinfra 1177 May 17 02:52 .bashrc
+-rw-r--r-- 1 ceeinfra ceeinfra   11 May 17 02:52 .vimrc
+-rw-r--r-- 1 ceeinfra ceeinfra 1078 May 17 02:52 .profile
+drwx------ 1 ceeinfra ceeinfra    6 May 20 09:26 .ansible
+drwx------ 1 ceeinfra ceeinfra   42 May 20 09:33 .ssh
+-rw------- 1 ceeinfra ceeinfra  637 May 20 13:27 admin-openrc.sh
+-rw------- 1 ceeinfra ceeinfra  435 May 20 13:27 .profile.openstack_api_cli
+-rw-r----- 1 ceeinfra ceeinfra  615 May 20 21:21 asmcs02_openrc.sh
+-rw------- 1 ceeinfra ceeinfra  934 May 20 21:21 .viminfo
+-rw------- 1 ceeinfra ceeinfra  303 May 20 21:23 .bash_history
+compute-1-u3:/home/ceeinfra #
+compute-1-u3:/home/ceeinfra #
+compute-1-u3:/home/ceeinfra #
+compute-1-u3:/home/ceeinfra # cp asmcs02_openrc.sh /home/asmcs02
+compute-1-u3:/home/ceeinfra # cd /home/asmcs02
+compute-1-u3:/home/asmcs02 # ls -ltr
+total 28
+drwxr-x--- 1 asmcs02 users    0 May 20 21:24 bin
+-rw------- 1 asmcs02 users  584 May 20 21:24 .profile.openstack_api_cli
+-rw-r----- 1 asmcs02 users 1028 May 20 21:24 .profile
+drwxr-x--- 1 asmcs02 users    0 May 20 21:24 .local
+-rw-r----- 1 asmcs02 users  861 May 20 21:24 .inputrc
+drwxr-x--- 1 asmcs02 users    0 May 20 21:24 .fonts
+-rw-r----- 1 asmcs02 users 1637 May 20 21:24 .emacs
+drwxr-x--- 1 asmcs02 users    0 May 20 21:24 .config
+drwxr-x--- 1 asmcs02 users    0 May 20 21:24 .cache
+-rw-r----- 1 asmcs02 users 1177 May 20 21:24 .bashrc
+-rw------- 1 asmcs02 users    9 May 20 21:24 .bash_history
+-rw-r----- 1 root    root   615 May 20 21:26 asmcs02_openrc.sh
+compute-1-u3:/home/asmcs02 #
+compute-1-u3:/home/asmcs02 #
+compute-1-u3:/home/asmcs02 #
+compute-1-u3:/home/asmcs02 #
+compute-1-u3:/home/asmcs02 # sudo chown asmcs02:users asmcs02_openrc.sh
+compute-1-u3:/home/asmcs02 # ls -ltr
+total 28
+drwxr-x--- 1 asmcs02 users    0 May 20 21:24 bin
+-rw------- 1 asmcs02 users  584 May 20 21:24 .profile.openstack_api_cli
+-rw-r----- 1 asmcs02 users 1028 May 20 21:24 .profile
+drwxr-x--- 1 asmcs02 users    0 May 20 21:24 .local
+-rw-r----- 1 asmcs02 users  861 May 20 21:24 .inputrc
+drwxr-x--- 1 asmcs02 users    0 May 20 21:24 .fonts
+-rw-r----- 1 asmcs02 users 1637 May 20 21:24 .emacs
+drwxr-x--- 1 asmcs02 users    0 May 20 21:24 .config
+drwxr-x--- 1 asmcs02 users    0 May 20 21:24 .cache
+-rw-r----- 1 asmcs02 users 1177 May 20 21:24 .bashrc
+-rw------- 1 asmcs02 users    9 May 20 21:24 .bash_history
+-rw-r----- 1 asmcs02 users  615 May 20 21:26 asmcs02_openrc.sh
+compute-1-u3:/home/asmcs02 # exit
+logout
+ceeinfra@compute-1-u3:~> exit
+logout
+Connection to 192.168.0.21 closed.
+ceeinfra@infra1:~> ssh asmcs02@192.168.0.21
+Warning: Permanently added '192.168.0.21' (ED25519) to the list of known hosts.
+
+Attention! Unauthorized remote access is strictly prohibited!
+
+This product processes personal data of users and system administrators, and
+depending on the tenant application, may provide access to sensitive personal
+data of subscribers. Misuse of such data may generate considerable harm to the
+data subject and shall be handled with care. Depending on the local/country
+legislation where the product is deployed and operated the use of this product
+may require providing notice of operator's privacy policy.
+
+asmcs02@192.168.0.21's password:
+Last login: Tue May 20 21:24:33 2025 from 192.168.0.42
+asmcs02@compute-1-u3:~>
+asmcs02@compute-1-u3:~>
+asmcs02@compute-1-u3:~>
+asmcs02@compute-1-u3:~> ls -ltr
+total 4
+drwxr-x--- 1 asmcs02 users   0 May 20 21:24 bin
+-rw-r----- 1 asmcs02 users 615 May 20 21:26 asmcs02_openrc.sh
+asmcs02@compute-1-u3:~> source asmcs02_openrc.sh
+asmcs02@compute-1-u3:~> openstack user list
++----------------------------------+-----------+
+| ID                               | Name      |
++----------------------------------+-----------+
+| 9932195ddc104b5e994da38b30c2973d | admin     |
+| 244d64343152426596c48ba3defb304a | placement |
+| 2b4bdb2c85a34ce087cd0b5e6d1b304d | swift     |
+| 4de7f6d66ca54c78a44b4dcf21738f79 | aetos     |
+| 20d5f4356b6b45a28626fe0f4865d37b | barbican  |
+| c6fb5c9b5ae145748aad5ed5d9ae8737 | sa_api    |
+| e7e2f50a700c44dda4f42db9ade38705 | cinder    |
+| 779d0e7db0ac4860ab810d345b4d7ed8 | glance    |
+| ed6d77fc4ada4d9bb24c8a578f6cb522 | nova      |
+| 888eb09b84d7403ab784208024fdfa5c | neutron   |
+| 64b55a0c73624208a46f454d807f24c7 | cmha      |
+| e972fb41aef34223a19f29d6d40a006a | heat      |
+| 54067a6b602042d6b319b40c183ad39f | asmcs02   |
++----------------------------------+-----------+
+asmcs02@compute-1-u3:~>
+asmcs02@compute-1-u3:~> exit
+logout
+Connection to 192.168.0.21 closed.
+ceeinfra@infra1:~> ssh asmcs02@192.168.0.22
+Warning: Permanently added '192.168.0.22' (ED25519) to the list of known hosts.
+
+Attention! Unauthorized remote access is strictly prohibited!
+
+This product processes personal data of users and system administrators, and
+depending on the tenant application, may provide access to sensitive personal
+data of subscribers. Misuse of such data may generate considerable harm to the
+data subject and shall be handled with care. Depending on the local/country
+legislation where the product is deployed and operated the use of this product
+may require providing notice of operator's privacy policy.
+
+asmcs02@192.168.0.22's password:
+Permission denied, please try again.
+asmcs02@192.168.0.22's password:
+
+ceeinfra@infra1:~> ssh ceeinfra@192.168.0.22
+Warning: Permanently added '192.168.0.22' (ED25519) to the list of known hosts.
+
+Attention! Unauthorized remote access is strictly prohibited!
+
+This product processes personal data of users and system administrators, and
+depending on the tenant application, may provide access to sensitive personal
+data of subscribers. Misuse of such data may generate considerable harm to the
+data subject and shall be handled with care. Depending on the local/country
+legislation where the product is deployed and operated the use of this product
+may require providing notice of operator's privacy policy.
+
+Last login: Tue May 20 19:21:03 2025 from 192.168.2.122
+ceeinfra@compute-1-u4:~>
+ceeinfra@compute-1-u4:~>
+ceeinfra@compute-1-u4:~>
+ceeinfra@compute-1-u4:~>
+ceeinfra@compute-1-u4:~>
+ceeinfra@compute-1-u4:~>
+ceeinfra@compute-1-u4:~> sudo useradd asmcs02
+ceeinfra@compute-1-u4:~> sudo passwd asmcs02
+New password:
+Retype new password:
+passwd: password updated successfully
+ceeinfra@compute-1-u4:~> sudo chage -l asmcs02
+Last password change                                    : May 21, 2025
+Password expires                                        : Aug 19, 2025
+Password inactive                                       : never
+Account expires                                         : never
+Minimum number of days between password change          : 1
+Maximum number of days between password change          : 90
+Number of days of warning before password expires       : 15
+ceeinfra@compute-1-u4:~> sudo chage -M -1 asmcs02
+ceeinfra@compute-1-u4:~> sudo chage -l asmcs02
+Last password change                                    : May 21, 2025
+Password expires                                        : never
+Password inactive                                       : never
+Account expires                                         : never
+Minimum number of days between password change          : 1
+Maximum number of days between password change          : -1
+Number of days of warning before password expires       : 15
+ceeinfra@compute-1-u4:~>
+ceeinfra@compute-1-u4:~> vi asmcs02_openrc.sh
+ceeinfra@compute-1-u4:~> ls -ltr
+total 8
+-rw------- 1 ceeinfra ceeinfra 637 May 20 13:27 admin-openrc.sh
+-rw-r----- 1 ceeinfra ceeinfra 615 May 20 21:33 asmcs02_openrc.sh
+ceeinfra@compute-1-u4:~>
+ceeinfra@compute-1-u4:~>
+ceeinfra@compute-1-u4:~>
+ceeinfra@compute-1-u4:~> sudo -i
+Directory: /root
+Tue May 20 21:34:18 SST 2025
+compute-1-u4:~ #
+compute-1-u4:~ #
+compute-1-u4:~ # cd /home/ceeinfra
+compute-1-u4:/home/ceeinfra # ls -ltr
+total 32
+-rw-r--r-- 1 ceeinfra ceeinfra 1177 May 17 02:52 .bashrc
+-rw-r--r-- 1 ceeinfra ceeinfra   11 May 17 02:52 .vimrc
+-rw-r--r-- 1 ceeinfra ceeinfra 1078 May 17 02:52 .profile
+drwx------ 1 ceeinfra ceeinfra    6 May 20 09:26 .ansible
+drwx------ 1 ceeinfra ceeinfra   42 May 20 09:33 .ssh
+-rw------- 1 ceeinfra ceeinfra  637 May 20 13:27 admin-openrc.sh
+-rw------- 1 ceeinfra ceeinfra  435 May 20 13:27 .profile.openstack_api_cli
+-rw------- 1 ceeinfra ceeinfra  135 May 20 19:22 .bash_history
+-rw-r----- 1 ceeinfra ceeinfra  615 May 20 21:33 asmcs02_openrc.sh
+-rw------- 1 ceeinfra ceeinfra  891 May 20 21:33 .viminfo
+compute-1-u4:/home/ceeinfra #
+compute-1-u4:/home/ceeinfra #
+compute-1-u4:/home/ceeinfra #
+compute-1-u4:/home/ceeinfra # cp asmcs02_openrc.sh /home/asmcs02
+compute-1-u4:/home/ceeinfra # cd /home/asmcs02
+-bash: cd: /home/asmcs02: Not a directory
+compute-1-u4:/home/ceeinfra # cd /home/asmcs02
+-bash: cd: /home/asmcs02: Not a directory
+compute-1-u4:/home/ceeinfra # cd ..
+compute-1-u4:/home # ls -ltr
+total 4
+drwxr-x--- 1 ceeinfra ceeinfra 224 May 20 21:33 ceeinfra
+-rw-r----- 1 root     root     615 May 20 21:34 asmcs02
+compute-1-u4:/home # cd asmcs02
+-bash: cd: asmcs02: Not a directory
+compute-1-u4:/home # exit
+logout
+ceeinfra@compute-1-u4:~>
+ceeinfra@compute-1-u4:~>
+ceeinfra@compute-1-u4:~> exit
+logout
+Connection to 192.168.0.22 closed.
+ceeinfra@infra1:~> ssh asmcs02@192.168.0.22
+Warning: Permanently added '192.168.0.22' (ED25519) to the list of known hosts.
+
+Attention! Unauthorized remote access is strictly prohibited!
+
+This product processes personal data of users and system administrators, and
+depending on the tenant application, may provide access to sensitive personal
+data of subscribers. Misuse of such data may generate considerable harm to the
+data subject and shall be handled with care. Depending on the local/country
+legislation where the product is deployed and operated the use of this product
+may require providing notice of operator's privacy policy.
+
+asmcs02@192.168.0.22's password:
+Last failed login: Tue May 20 21:31:35 SST 2025 from 192.168.0.42 on ssh:notty
+There was 1 failed login attempt since the last successful login.
+Could not chdir to home directory /home/asmcs02: Not a directory
+-bash: /home/asmcs02/.bash_profile: Not a directory
+asmcs02@compute-1-u4:/>
+asmcs02@compute-1-u4:/>
+asmcs02@compute-1-u4:/>
+asmcs02@compute-1-u4:/>
+asmcs02@compute-1-u4:/> ls -ltr
+total 4
+drwxr-xr-x    1 root root    0 Mar 15  2022 selinux
+drwxr-xr-x    1 root root  118 May 20 09:28 usr
+drwxr-xr-x    1 root root  100 May 20 09:29 lib
+drwxr-xr-x    1 root root   98 May 20 09:29 var
+drwxr-xr-x    1 root root   46 May 20 09:34 mnt
+drwxr-xr-x    1 root root  776 May 20 09:39 boot
+drwxr-xr-x    1 root root   22 May 20 09:40 srv
+drwxr-xr-x    1 root root 3726 May 20 09:40 sbin
+dr-xr-xr-x   13 root root    0 May 20 09:46 sys
+dr-xr-xr-x 1830 root root    0 May 20 09:46 proc
+drwxr-xr-x    1 root root 2746 May 20 13:20 lib64
+drwxr-xr-x    1 root root 1746 May 20 13:35 bin
+drwxr-xr-x    1 root root   32 May 20 13:38 opt
+drwxr-xr-x   30 root root  940 May 20 14:32 run
+drwx------    1 root root  190 May 20 19:21 root
+drwxr-xr-x   21 root root 4320 May 20 20:14 dev
+drwxrwxrwt    1 root root  498 May 20 21:30 tmp
+drwxr-xr-x    1 root root 3942 May 20 21:32 etc
+drwxr-xr-x    1 root root   30 May 20 21:34 home
+asmcs02@compute-1-u4:/>
+asmcs02@compute-1-u4:/>
+asmcs02@compute-1-u4:/>
+asmcs02@compute-1-u4:/> cd home
+asmcs02@compute-1-u4:/home> ls -ltr
+total 4
+drwxr-x--- 1 ceeinfra ceeinfra 224 May 20 21:33 ceeinfra
+-rw-r----- 1 root     root     615 May 20 21:34 asmcs02
+asmcs02@compute-1-u4:/home>
+asmcs02@compute-1-u4:/home>
+asmcs02@compute-1-u4:/home>
+asmcs02@compute-1-u4:/home> exit
+logout
+-bash: /home/asmcs02/.bash_logout: Not a directory
+Connection to 192.168.0.22 closed.
+ceeinfra@infra1:~>
+ceeinfra@infra1:~>
+ceeinfra@infra1:~>
+ceeinfra@infra1:~>
+ceeinfra@infra1:~> ssh ceeinfra@192.168.0.22
+Warning: Permanently added '192.168.0.22' (ED25519) to the list of known hosts.
+
+Attention! Unauthorized remote access is strictly prohibited!
+
+This product processes personal data of users and system administrators, and
+depending on the tenant application, may provide access to sensitive personal
+data of subscribers. Misuse of such data may generate considerable harm to the
+data subject and shall be handled with care. Depending on the local/country
+legislation where the product is deployed and operated the use of this product
+may require providing notice of operator's privacy policy.
+
+Last login: Tue May 20 21:31:44 2025 from 192.168.0.42
+ceeinfra@compute-1-u4:~>
+ceeinfra@compute-1-u4:~>
+ceeinfra@compute-1-u4:~>
+ceeinfra@compute-1-u4:~> sudo useradd asmcs02
+useradd: user 'asmcs02' already exists
+ceeinfra@compute-1-u4:~>
+ceeinfra@compute-1-u4:~>
+ceeinfra@compute-1-u4:~> sudo chage -l asmcs02
+Last password change                                    : May 21, 2025
+Password expires                                        : never
+Password inactive                                       : never
+Account expires                                         : never
+Minimum number of days between password change          : 1
+Maximum number of days between password change          : -1
+Number of days of warning before password expires       : 15
+ceeinfra@compute-1-u4:~> sudo -i
+Directory: /root
+Tue May 20 21:39:49 SST 2025
+compute-1-u4:~ #
+compute-1-u4:~ #
+compute-1-u4:~ #
+compute-1-u4:~ #
+compute-1-u4:~ # ls -ltr
+total 24
+drwxr-xr-x 1 root root    0 Mar 15  2022 bin
+drwx------ 1 root root    0 Mar 15  2022 .gnupg
+-rw-r--r-- 1 root root   49 May 17 02:52 .profile
+-rw-r--r-- 1 root root   39 May 17 02:52 .bashrc
+-rw-r--r-- 1 root root   11 May 17 02:52 .vimrc
+drwx------ 1 root root    6 May 20 09:29 .ansible
+-rw------- 1 root root   22 May 20 09:30 .pam_environment
+drwxr-xr-x 1 root root  140 May 20 11:20 .ansible_async
+drwxr-xr-x 1 root root   36 May 20 13:36 .cache
+-rw------- 1 root root  987 May 20 19:21 .viminfo
+-rw------- 1 root root 1004 May 20 21:36 .bash_history
+compute-1-u4:~ # cd /home
+compute-1-u4:/home # ls -ltr
+total 4
+drwxr-x--- 1 ceeinfra ceeinfra 224 May 20 21:33 ceeinfra
+-rw-r----- 1 root     root     615 May 20 21:34 asmcs02
+compute-1-u4:/home # cd asmcs02
+-bash: cd: asmcs02: Not a directory
+compute-1-u4:/home # exit
+logout
+ceeinfra@compute-1-u4:~> exit
+logout
+Connection to 192.168.0.22 closed.
+ceeinfra@infra1:~> ssh ceeinfra@192.168.0.21
+Warning: Permanently added '192.168.0.21' (ED25519) to the list of known hosts.
+
+Attention! Unauthorized remote access is strictly prohibited!
+
+This product processes personal data of users and system administrators, and
+depending on the tenant application, may provide access to sensitive personal
+data of subscribers. Misuse of such data may generate considerable harm to the
+data subject and shall be handled with care. Depending on the local/country
+legislation where the product is deployed and operated the use of this product
+may require providing notice of operator's privacy policy.
+
+Last login: Tue May 20 21:25:00 2025 from 192.168.0.42
+ceeinfra@compute-1-u3:~> sudo -i
+Directory: /root
+Tue May 20 21:40:45 SST 2025
+compute-1-u3:~ #
+compute-1-u3:~ #
+compute-1-u3:~ # cd /home
+compute-1-u3:/home # ls -ltr
+total 0
+drwxr-x--- 1 ceeinfra ceeinfra 224 May 20 21:21 ceeinfra
+drwxr-x--- 1 asmcs02  users    226 May 20 21:26 asmcs02
+compute-1-u3:/home # exit
+logout
+ceeinfra@compute-1-u3:~>
+ceeinfra@compute-1-u3:~>
+ceeinfra@compute-1-u3:~>
+ceeinfra@compute-1-u3:~>
+ceeinfra@compute-1-u3:~>
+ceeinfra@compute-1-u3:~> exit
+logout
+Connection to 192.168.0.21 closed.
+ceeinfra@infra1:~> ssh ceeinfra@192.168.0.22
+Warning: Permanently added '192.168.0.22' (ED25519) to the list of known hosts.
+
+Attention! Unauthorized remote access is strictly prohibited!
+
+This product processes personal data of users and system administrators, and
+depending on the tenant application, may provide access to sensitive personal
+data of subscribers. Misuse of such data may generate considerable harm to the
+data subject and shall be handled with care. Depending on the local/country
+legislation where the product is deployed and operated the use of this product
+may require providing notice of operator's privacy policy.
+
+Last login: Tue May 20 21:39:16 2025 from 192.168.0.42
+ceeinfra@compute-1-u4:~>
+ceeinfra@compute-1-u4:~>
+ceeinfra@compute-1-u4:~>
+ceeinfra@compute-1-u4:~> sudo userdel asmcs02
+no crontab for asmcs02
+ceeinfra@compute-1-u4:~> ls -ltr
+total 8
+-rw------- 1 ceeinfra ceeinfra 637 May 20 13:27 admin-openrc.sh
+-rw-r----- 1 ceeinfra ceeinfra 615 May 20 21:33 asmcs02_openrc.sh
+ceeinfra@compute-1-u4:~>
+ceeinfra@compute-1-u4:~> sudo -i
+Directory: /root
+Tue May 20 21:44:22 SST 2025
+compute-1-u4:~ # cd /home
+compute-1-u4:/home # ls -ltr
+total 4
+drwxr-x--- 1 ceeinfra ceeinfra 224 May 20 21:33 ceeinfra
+-rw-r----- 1 root     root     615 May 20 21:34 asmcs02
+compute-1-u4:/home #
+compute-1-u4:/home # cd asmcs02
+-bash: cd: asmcs02: Not a directory
+compute-1-u4:/home # rm -i asmcs02
+rm: remove regular file 'asmcs02'? y
+compute-1-u4:/home # ls -ltr
+total 0
+drwxr-x--- 1 ceeinfra ceeinfra 224 May 20 21:33 ceeinfra
+compute-1-u4:/home #
+compute-1-u4:/home #
+compute-1-u4:/home #
+compute-1-u4:/home #
+compute-1-u4:/home #
+compute-1-u4:/home # exit
+logout
+ceeinfra@compute-1-u4:~>
+ceeinfra@compute-1-u4:~>
+ceeinfra@compute-1-u4:~> ls -ltr
+total 8
+-rw------- 1 ceeinfra ceeinfra 637 May 20 13:27 admin-openrc.sh
+-rw-r----- 1 ceeinfra ceeinfra 615 May 20 21:33 asmcs02_openrc.sh
+ceeinfra@compute-1-u4:~>
+ceeinfra@compute-1-u4:~>
+ceeinfra@compute-1-u4:~>
+ceeinfra@compute-1-u4:~>
+ceeinfra@compute-1-u4:~> sudo chage -l asmcs02
+chage: user 'asmcs02' does not exist in /etc/passwd
+ceeinfra@compute-1-u4:~>
+ceeinfra@compute-1-u4:~>
+ceeinfra@compute-1-u4:~> sudo useradd asmcs02
+ceeinfra@compute-1-u4:~> sudo passwd asmcs02
+New password:
+Retype new password:
+passwd: password updated successfully
+ceeinfra@compute-1-u4:~>
+ceeinfra@compute-1-u4:~>
+ceeinfra@compute-1-u4:~>
+ceeinfra@compute-1-u4:~>
+ceeinfra@compute-1-u4:~> sudo chage -l asmcs02
+Last password change                                    : May 21, 2025
+Password expires                                        : Aug 19, 2025
+Password inactive                                       : never
+Account expires                                         : never
+Minimum number of days between password change          : 1
+Maximum number of days between password change          : 90
+Number of days of warning before password expires       : 15
+ceeinfra@compute-1-u4:~>
+ceeinfra@compute-1-u4:~>
+ceeinfra@compute-1-u4:~> sudo chage -M -1 asmcs02
+ceeinfra@compute-1-u4:~> sudo chage -l asmcs02
+Last password change                                    : May 21, 2025
+Password expires                                        : never
+Password inactive                                       : never
+Account expires                                         : never
+Minimum number of days between password change          : 1
+Maximum number of days between password change          : -1
+Number of days of warning before password expires       : 15
+ceeinfra@compute-1-u4:~> exit
+logout
+Connection to 192.168.0.22 closed.
+ceeinfra@infra1:~> ssh asmcs02@192.168.0.22
+Warning: Permanently added '192.168.0.22' (ED25519) to the list of known hosts.
+
+Attention! Unauthorized remote access is strictly prohibited!
+
+This product processes personal data of users and system administrators, and
+depending on the tenant application, may provide access to sensitive personal
+data of subscribers. Misuse of such data may generate considerable harm to the
+data subject and shall be handled with care. Depending on the local/country
+legislation where the product is deployed and operated the use of this product
+may require providing notice of operator's privacy policy.
+
+asmcs02@192.168.0.22's password:
+Last failed login: Tue May 20 21:31:35 SST 2025 from 192.168.0.42 on ssh:notty
+There was 1 failed login attempt since the last successful login.
+asmcs02@compute-1-u4:~>
+asmcs02@compute-1-u4:~>
+asmcs02@compute-1-u4:~>
+asmcs02@compute-1-u4:~>
+asmcs02@compute-1-u4:~>
+asmcs02@compute-1-u4:~> ls -ltr
+total 0
+drwxr-x--- 1 asmcs02 users 0 May 20 21:57 bin
+asmcs02@compute-1-u4:~>
+asmcs02@compute-1-u4:~>
+asmcs02@compute-1-u4:~>
+asmcs02@compute-1-u4:~> sudo -i
+
+We trust you have received the usual lecture from the local System
+Administrator. It usually boils down to these three things:
+
+    #1) Respect the privacy of others.
+    #2) Think before you type.
+    #3) With great power comes great responsibility.
+
+[sudo] password for asmcs02:
+sudo: a password is required
+asmcs02@compute-1-u4:~>
+asmcs02@compute-1-u4:~> cd /home
+asmcs02@compute-1-u4:/home>
+asmcs02@compute-1-u4:/home> ls -ltr
+total 0
+drwxr-x--- 1 ceeinfra ceeinfra 224 May 20 21:33 ceeinfra
+drwxr-x--- 1 asmcs02  users    192 May 20 21:57 asmcs02
+asmcs02@compute-1-u4:/home>
+asmcs02@compute-1-u4:/home>
+asmcs02@compute-1-u4:/home>
+asmcs02@compute-1-u4:/home>
+asmcs02@compute-1-u4:/home> exit
+logout
+Connection to 192.168.0.22 closed.
+ceeinfra@infra1:~>
+ceeinfra@infra1:~>
+ceeinfra@infra1:~>
+ceeinfra@infra1:~>
+ceeinfra@infra1:~> ssh ceeinfra@192.168.0.22
+Warning: Permanently added '192.168.0.22' (ED25519) to the list of known hosts.
+
+Attention! Unauthorized remote access is strictly prohibited!
+
+This product processes personal data of users and system administrators, and
+depending on the tenant application, may provide access to sensitive personal
+data of subscribers. Misuse of such data may generate considerable harm to the
+data subject and shall be handled with care. Depending on the local/country
+legislation where the product is deployed and operated the use of this product
+may require providing notice of operator's privacy policy.
+
+Last login: Tue May 20 21:43:13 2025 from 192.168.0.42
+ceeinfra@compute-1-u4:~>
+ceeinfra@compute-1-u4:~>
+ceeinfra@compute-1-u4:~>
+ceeinfra@compute-1-u4:~>
+ceeinfra@compute-1-u4:~> sudo -i
+Directory: /root
+Tue May 20 21:58:15 SST 2025
+compute-1-u4:~ #
+compute-1-u4:~ #
+compute-1-u4:~ #
+compute-1-u4:~ # cd /home
+compute-1-u4:/home # ls -ltr
+total 0
+drwxr-x--- 1 ceeinfra ceeinfra 224 May 20 21:33 ceeinfra
+drwxr-x--- 1 asmcs02  users    192 May 20 21:57 asmcs02
+compute-1-u4:/home # cd ceeinfra
+compute-1-u4:/home/ceeinfra # ls -ltr
+total 32
+-rw-r--r-- 1 ceeinfra ceeinfra 1177 May 17 02:52 .bashrc
+-rw-r--r-- 1 ceeinfra ceeinfra   11 May 17 02:52 .vimrc
+-rw-r--r-- 1 ceeinfra ceeinfra 1078 May 17 02:52 .profile
+drwx------ 1 ceeinfra ceeinfra    6 May 20 09:26 .ansible
+drwx------ 1 ceeinfra ceeinfra   42 May 20 09:33 .ssh
+-rw------- 1 ceeinfra ceeinfra  637 May 20 13:27 admin-openrc.sh
+-rw------- 1 ceeinfra ceeinfra  435 May 20 13:27 .profile.openstack_api_cli
+-rw-r----- 1 ceeinfra ceeinfra  615 May 20 21:33 asmcs02_openrc.sh
+-rw------- 1 ceeinfra ceeinfra  891 May 20 21:33 .viminfo
+-rw------- 1 ceeinfra ceeinfra  525 May 20 21:56 .bash_history
+compute-1-u4:/home/ceeinfra #
+compute-1-u4:/home/ceeinfra #
+compute-1-u4:/home/ceeinfra #
+compute-1-u4:/home/ceeinfra # cp asmcs02_openrc.sh /home/asmcs02/
+compute-1-u4:/home/ceeinfra # cd /home/asmcs02/
+compute-1-u4:/home/asmcs02 # ls -ltr
+total 28
+drwxr-x--- 1 asmcs02 users    0 May 20 21:57 bin
+-rw-r----- 1 asmcs02 users 1028 May 20 21:57 .profile
+drwxr-x--- 1 asmcs02 users    0 May 20 21:57 .local
+-rw-r----- 1 asmcs02 users  861 May 20 21:57 .inputrc
+drwxr-x--- 1 asmcs02 users    0 May 20 21:57 .fonts
+-rw-r----- 1 asmcs02 users 1637 May 20 21:57 .emacs
+drwxr-x--- 1 asmcs02 users    0 May 20 21:57 .config
+drwxr-x--- 1 asmcs02 users    0 May 20 21:57 .cache
+-rw-r----- 1 asmcs02 users 1177 May 20 21:57 .bashrc
+-rw------- 1 asmcs02 users  584 May 20 21:57 .profile.openstack_api_cli
+-rw------- 1 asmcs02 users   38 May 20 21:58 .bash_history
+-rw-r----- 1 root    root   615 May 20 21:59 asmcs02_openrc.sh
+compute-1-u4:/home/asmcs02 #
+compute-1-u4:/home/asmcs02 #
+compute-1-u4:/home/asmcs02 #
+compute-1-u4:/home/asmcs02 #
+compute-1-u4:/home/asmcs02 #
+compute-1-u4:/home/asmcs02 # sudo chown asmcs02:users asmcs02_openrc.sh
+compute-1-u4:/home/asmcs02 # ls -ltr
+total 28
+drwxr-x--- 1 asmcs02 users    0 May 20 21:57 bin
+-rw-r----- 1 asmcs02 users 1028 May 20 21:57 .profile
+drwxr-x--- 1 asmcs02 users    0 May 20 21:57 .local
+-rw-r----- 1 asmcs02 users  861 May 20 21:57 .inputrc
+drwxr-x--- 1 asmcs02 users    0 May 20 21:57 .fonts
+-rw-r----- 1 asmcs02 users 1637 May 20 21:57 .emacs
+drwxr-x--- 1 asmcs02 users    0 May 20 21:57 .config
+drwxr-x--- 1 asmcs02 users    0 May 20 21:57 .cache
+-rw-r----- 1 asmcs02 users 1177 May 20 21:57 .bashrc
+-rw------- 1 asmcs02 users  584 May 20 21:57 .profile.openstack_api_cli
+-rw------- 1 asmcs02 users   38 May 20 21:58 .bash_history
+-rw-r----- 1 asmcs02 users  615 May 20 21:59 asmcs02_openrc.sh
+compute-1-u4:/home/asmcs02 #
+compute-1-u4:/home/asmcs02 #
+compute-1-u4:/home/asmcs02 #
+compute-1-u4:/home/asmcs02 # exit
+logout
+ceeinfra@compute-1-u4:~>
+ceeinfra@compute-1-u4:~>
+ceeinfra@compute-1-u4:~> exit
+logout
+Connection to 192.168.0.22 closed.
+ceeinfra@infra1:~> ssh asmcs02@192.168.0.22
+Warning: Permanently added '192.168.0.22' (ED25519) to the list of known hosts.
+
+Attention! Unauthorized remote access is strictly prohibited!
+
+This product processes personal data of users and system administrators, and
+depending on the tenant application, may provide access to sensitive personal
+data of subscribers. Misuse of such data may generate considerable harm to the
+data subject and shall be handled with care. Depending on the local/country
+legislation where the product is deployed and operated the use of this product
+may require providing notice of operator's privacy policy.
+
+asmcs02@192.168.0.22's password:
+Last login: Tue May 20 21:57:13 2025 from 192.168.0.42
+asmcs02@compute-1-u4:~>
+asmcs02@compute-1-u4:~>
+asmcs02@compute-1-u4:~>
+asmcs02@compute-1-u4:~> ls -ltr
+total 4
+drwxr-x--- 1 asmcs02 users   0 May 20 21:57 bin
+-rw-r----- 1 asmcs02 users 615 May 20 21:59 asmcs02_openrc.sh
+asmcs02@compute-1-u4:~>
+asmcs02@compute-1-u4:~>
+asmcs02@compute-1-u4:~> source asmcs02_openrc.sh
+asmcs02@compute-1-u4:~> openstack user list
++----------------------------------+-----------+
+| ID                               | Name      |
++----------------------------------+-----------+
+| 9932195ddc104b5e994da38b30c2973d | admin     |
+| 244d64343152426596c48ba3defb304a | placement |
+| 2b4bdb2c85a34ce087cd0b5e6d1b304d | swift     |
+| 4de7f6d66ca54c78a44b4dcf21738f79 | aetos     |
+| 20d5f4356b6b45a28626fe0f4865d37b | barbican  |
+| c6fb5c9b5ae145748aad5ed5d9ae8737 | sa_api    |
+| e7e2f50a700c44dda4f42db9ade38705 | cinder    |
+| 779d0e7db0ac4860ab810d345b4d7ed8 | glance    |
+| ed6d77fc4ada4d9bb24c8a578f6cb522 | nova      |
+| 888eb09b84d7403ab784208024fdfa5c | neutron   |
+| 64b55a0c73624208a46f454d807f24c7 | cmha      |
+| e972fb41aef34223a19f29d6d40a006a | heat      |
+| 54067a6b602042d6b319b40c183ad39f | asmcs02   |
++----------------------------------+-----------+
+asmcs02@compute-1-u4:~>
+asmcs02@compute-1-u4:~>
+asmcs02@compute-1-u4:~>
+asmcs02@compute-1-u4:~>
+asmcs02@compute-1-u4:~> exit
+logout
+Connection to 192.168.0.22 closed.
+ceeinfra@infra1:~>
+ceeinfra@infra1:~>
+ceeinfra@infra1:~>
+ceeinfra@infra1:~> ssh asmcs02@192.168.0.20
+Warning: Permanently added '192.168.0.20' (ED25519) to the list of known hosts.
+
+Attention! Unauthorized remote access is strictly prohibited!
+
+This product processes personal data of users and system administrators, and
+depending on the tenant application, may provide access to sensitive personal
+data of subscribers. Misuse of such data may generate considerable harm to the
+data subject and shall be handled with care. Depending on the local/country
+legislation where the product is deployed and operated the use of this product
+may require providing notice of operator's privacy policy.
+
+asmcs02@192.168.0.20's password:
+
+ceeinfra@infra1:~>
+ceeinfra@infra1:~>
+ceeinfra@infra1:~>
+ceeinfra@infra1:~> ssh ceeinfra@192.168.0.20
+Warning: Permanently added '192.168.0.20' (ED25519) to the list of known hosts.
+
+Attention! Unauthorized remote access is strictly prohibited!
+
+This product processes personal data of users and system administrators, and
+depending on the tenant application, may provide access to sensitive personal
+data of subscribers. Misuse of such data may generate considerable harm to the
+data subject and shall be handled with care. Depending on the local/country
+legislation where the product is deployed and operated the use of this product
+may require providing notice of operator's privacy policy.
+
+Last login: Tue May 20 21:57:01 2025 from 192.168.2.122
+ceeinfra@compute-1-u2:~>
+ceeinfra@compute-1-u2:~>
+ceeinfra@compute-1-u2:~>
+ceeinfra@compute-1-u2:~>
+ceeinfra@compute-1-u2:~>
+ceeinfra@compute-1-u2:~> cd /var/lib/swift
+ceeinfra@compute-1-u2:/var/lib/swift> ls -ltr
+total 24
+drwx------ 2 42445 42445 16384 May 20 09:27 lost+found
+drwxr-xr-x 2 42445 42445  4096 May 20 13:30 lock
+drwxr-xr-x 6 42445 42445  4096 May 20 19:04 swiftobj
+ceeinfra@compute-1-u2:/var/lib/swift>
+ceeinfra@compute-1-u2:/var/lib/swift>
+ceeinfra@compute-1-u2:/var/lib/swift>
+ceeinfra@compute-1-u2:/var/lib/swift> df -kh
+Filesystem                   Size  Used Avail Use% Mounted on
+devtmpfs                     4.0M     0  4.0M   0% /dev
+tmpfs                         46G     0   46G   0% /dev/shm
+tmpfs                        256M  147M  110M  58% /run
+tmpfs                        4.0M     0  4.0M   0% /sys/fs/cgroup
+/dev/sdb2                     50G  3.3G   47G   7% /
+/dev/sdb2                     50G  3.3G   47G   7% /.snapshots
+/dev/sdb2                     50G  3.3G   47G   7% /boot/grub2/i386-pc
+/dev/sdb2                     50G  3.3G   47G   7% /boot/grub2/x86_64-efi
+/dev/sdb2                     50G  3.3G   47G   7% /home
+/dev/sdb2                     50G  3.3G   47G   7% /opt
+/dev/sdb2                     50G  3.3G   47G   7% /srv
+/dev/sdb2                     50G  3.3G   47G   7% /tmp
+/dev/sdb2                     50G  3.3G   47G   7% /var
+/dev/mapper/system-crash      25G   32K   24G   1% /var/crash
+/dev/mapper/system-glance     49G  200K   47G   1% /var/lib/glance
+/dev/mapper/system-mysql      49G  767M   46G   2% /var/lib/mysql
+/dev/mapper/system-docker     25G  6.3G   17G  27% /var/lib/docker
+/dev/mapper/system-rabbitmq  9.8G  417M  8.9G   5% /var/lib/rabbitmq
+/dev/mapper/system-horizon    20G   24K   19G   1% /var/lib/horizon
+/dev/mapper/system-nova      118G   24K  112G   1% /var/lib/nova
+/dev/mapper/system-swiftobj  531G   16M  504G   1% /var/lib/swift
+/dev/mapper/system-infra     324G  321G  3.7G  99% /var/lib/infra
+/dev/mapper/system-log        20G  226M   19G   2% /var/log
+tmpfs                        128M     0  128M   0% /run/user/1000
+ceeinfra@compute-1-u2:/var/lib/swift> ls -ltr
+total 24
+drwx------ 2 42445 42445 16384 May 20 09:27 lost+found
+drwxr-xr-x 2 42445 42445  4096 May 20 13:30 lock
+drwxr-xr-x 6 42445 42445  4096 May 20 19:04 swiftobj
+ceeinfra@compute-1-u2:/var/lib/swift>
+ceeinfra@compute-1-u2:/var/lib/swift>
+ceeinfra@compute-1-u2:/var/lib/swift>
+ceeinfra@compute-1-u2:/var/lib/swift> sudo mkdir VNF_ADMIN
+ceeinfra@compute-1-u2:/var/lib/swift> ls -ltr
+total 28
+drwx------ 2 42445 42445 16384 May 20 09:27 lost+found
+drwxr-xr-x 2 42445 42445  4096 May 20 13:30 lock
+drwxr-xr-x 6 42445 42445  4096 May 20 19:04 swiftobj
+drwxr-xr-x 2 root  root   4096 May 20 22:03 VNF_ADMIN
+ceeinfra@compute-1-u2:/var/lib/swift>
+ceeinfra@compute-1-u2:/var/lib/swift>
+ceeinfra@compute-1-u2:/var/lib/swift>
+ceeinfra@compute-1-u2:/var/lib/swift> sudo chown asmcs02:users VNF_ADMIN/
+ceeinfra@compute-1-u2:/var/lib/swift> ls -ltr
+total 28
+drwx------ 2   42445 42445 16384 May 20 09:27 lost+found
+drwxr-xr-x 2   42445 42445  4096 May 20 13:30 lock
+drwxr-xr-x 6   42445 42445  4096 May 20 19:04 swiftobj
+drwxr-xr-x 2 asmcs02 users  4096 May 20 22:03 VNF_ADMIN
+ceeinfra@compute-1-u2:/var/lib/swift> sudo chmod +777 VNF_ADMIN/
+ceeinfra@compute-1-u2:/var/lib/swift> ls -ltr
+total 28
+drwx------ 2   42445 42445 16384 May 20 09:27 lost+found
+drwxr-xr-x 2   42445 42445  4096 May 20 13:30 lock
+drwxr-xr-x 6   42445 42445  4096 May 20 19:04 swiftobj
+drwxrwxrwx 2 asmcs02 users  4096 May 20 22:03 VNF_ADMIN
+ceeinfra@compute-1-u2:/var/lib/swift>
+ceeinfra@compute-1-u2:/var/lib/swift> cd VNF_ADMIN
+ceeinfra@compute-1-u2:/var/lib/swift/VNF_ADMIN> ls -ltr
+total 0
+ceeinfra@compute-1-u2:/var/lib/swift/VNF_ADMIN>
+ceeinfra@compute-1-u2:/var/lib/swift/VNF_ADMIN>
+ceeinfra@compute-1-u2:/var/lib/swift/VNF_ADMIN> mkdir test
+ceeinfra@compute-1-u2:/var/lib/swift/VNF_ADMIN> ls -ltr
+total 4
+drwxr-x--- 2 ceeinfra ceeinfra 4096 May 20 22:05 test
+ceeinfra@compute-1-u2:/var/lib/swift/VNF_ADMIN>
+ceeinfra@compute-1-u2:/var/lib/swift/VNF_ADMIN>
+ceeinfra@compute-1-u2:/var/lib/swift/VNF_ADMIN> rm -rf test
+ceeinfra@compute-1-u2:/var/lib/swift/VNF_ADMIN> ls -ltr
+total 0
+ceeinfra@compute-1-u2:/var/lib/swift/VNF_ADMIN>
+ceeinfra@compute-1-u2:/var/lib/swift/VNF_ADMIN>
+ceeinfra@compute-1-u2:/var/lib/swift/VNF_ADMIN>
+ceeinfra@compute-1-u2:/var/lib/swift/VNF_ADMIN>
+ceeinfra@compute-1-u2:/var/lib/swift/VNF_ADMIN> exit
+logout
+Connection to 192.168.0.20 closed.
+ceeinfra@infra1:~>
+ceeinfra@infra1:~>
+ceeinfra@infra1:~> ssh ceeinfra@192.168.0.21
+Warning: Permanently added '192.168.0.21' (ED25519) to the list of known hosts.
+
+Attention! Unauthorized remote access is strictly prohibited!
+
+This product processes personal data of users and system administrators, and
+depending on the tenant application, may provide access to sensitive personal
+data of subscribers. Misuse of such data may generate considerable harm to the
+data subject and shall be handled with care. Depending on the local/country
+legislation where the product is deployed and operated the use of this product
+may require providing notice of operator's privacy policy.
+
+Last login: Tue May 20 21:40:41 2025 from 192.168.0.42
+ceeinfra@compute-1-u3:~>
+ceeinfra@compute-1-u3:~>
+ceeinfra@compute-1-u3:~>
+ceeinfra@compute-1-u3:~>
+ceeinfra@compute-1-u3:~>
+ceeinfra@compute-1-u3:~> cd /var/lib/swift
+ceeinfra@compute-1-u3:/var/lib/swift> ls -ltr
+total 24
+drwx------ 2 42445 42445 16384 May 20 09:27 lost+found
+drwxr-xr-x 2 42445 42445  4096 May 20 13:30 lock
+drwxr-xr-x 6 42445 42445  4096 May 20 19:04 swiftobj
+ceeinfra@compute-1-u3:/var/lib/swift>
+ceeinfra@compute-1-u3:/var/lib/swift>
+ceeinfra@compute-1-u3:/var/lib/swift>
+ceeinfra@compute-1-u3:/var/lib/swift> sudo mkdir VNF_ADMIN
+ceeinfra@compute-1-u3:/var/lib/swift> ls -ltr
+total 28
+drwx------ 2 42445 42445 16384 May 20 09:27 lost+found
+drwxr-xr-x 2 42445 42445  4096 May 20 13:30 lock
+drwxr-xr-x 6 42445 42445  4096 May 20 19:04 swiftobj
+drwxr-xr-x 2 root  root   4096 May 20 22:06 VNF_ADMIN
+ceeinfra@compute-1-u3:/var/lib/swift>
+ceeinfra@compute-1-u3:/var/lib/swift>
+ceeinfra@compute-1-u3:/var/lib/swift>
+ceeinfra@compute-1-u3:/var/lib/swift> sudo chown asmcs02:users VNF_ADMIN/
+ceeinfra@compute-1-u3:/var/lib/swift> ls -ltr
+total 28
+drwx------ 2   42445 42445 16384 May 20 09:27 lost+found
+drwxr-xr-x 2   42445 42445  4096 May 20 13:30 lock
+drwxr-xr-x 6   42445 42445  4096 May 20 19:04 swiftobj
+drwxr-xr-x 2 asmcs02 users  4096 May 20 22:06 VNF_ADMIN
+ceeinfra@compute-1-u3:/var/lib/swift>
+ceeinfra@compute-1-u3:/var/lib/swift>
+ceeinfra@compute-1-u3:/var/lib/swift>
+ceeinfra@compute-1-u3:/var/lib/swift> sudo chmod +777 VNF_ADMIN/
+ceeinfra@compute-1-u3:/var/lib/swift> ls -ltr
+total 28
+drwx------ 2   42445 42445 16384 May 20 09:27 lost+found
+drwxr-xr-x 2   42445 42445  4096 May 20 13:30 lock
+drwxr-xr-x 6   42445 42445  4096 May 20 19:04 swiftobj
+drwxrwxrwx 2 asmcs02 users  4096 May 20 22:06 VNF_ADMIN
+ceeinfra@compute-1-u3:/var/lib/swift> cd VNF_ADMIN
+ceeinfra@compute-1-u3:/var/lib/swift/VNF_ADMIN> mkdir test
+ceeinfra@compute-1-u3:/var/lib/swift/VNF_ADMIN> ls -ltr
+total 4
+drwxr-x--- 2 ceeinfra ceeinfra 4096 May 20 22:07 test
+ceeinfra@compute-1-u3:/var/lib/swift/VNF_ADMIN> rm -rf test
+ceeinfra@compute-1-u3:/var/lib/swift/VNF_ADMIN> ls -ltr
+total 0
+ceeinfra@compute-1-u3:/var/lib/swift/VNF_ADMIN>
+ceeinfra@compute-1-u3:/var/lib/swift/VNF_ADMIN>
+ceeinfra@compute-1-u3:/var/lib/swift/VNF_ADMIN>
+ceeinfra@compute-1-u3:/var/lib/swift/VNF_ADMIN> exit
+logout
+Connection to 192.168.0.21 closed.
+ceeinfra@infra1:~>
+ceeinfra@infra1:~>
+ceeinfra@infra1:~> ssh ceeinfra@192.168.0.22
+Warning: Permanently added '192.168.0.22' (ED25519) to the list of known hosts.
+
+Attention! Unauthorized remote access is strictly prohibited!
+
+This product processes personal data of users and system administrators, and
+depending on the tenant application, may provide access to sensitive personal
+data of subscribers. Misuse of such data may generate considerable harm to the
+data subject and shall be handled with care. Depending on the local/country
+legislation where the product is deployed and operated the use of this product
+may require providing notice of operator's privacy policy.
+
+Last login: Tue May 20 21:58:11 2025 from 192.168.0.42
+ceeinfra@compute-1-u4:~>
+ceeinfra@compute-1-u4:~>
+ceeinfra@compute-1-u4:~>
+ceeinfra@compute-1-u4:~> cd /var/lib/swift
+ceeinfra@compute-1-u4:/var/lib/swift> df -kt
+df: option requires an argument -- 't'
+Try 'df --help' for more information.
+ceeinfra@compute-1-u4:/var/lib/swift> df -kh
+Filesystem                   Size  Used Avail Use% Mounted on
+devtmpfs                     4.0M     0  4.0M   0% /dev
+tmpfs                         46G     0   46G   0% /dev/shm
+tmpfs                        256M  147M  110M  58% /run
+tmpfs                        4.0M     0  4.0M   0% /sys/fs/cgroup
+/dev/sdb2                     50G  3.3G   47G   7% /
+/dev/sdb2                     50G  3.3G   47G   7% /.snapshots
+/dev/sdb2                     50G  3.3G   47G   7% /boot/grub2/i386-pc
+/dev/sdb2                     50G  3.3G   47G   7% /boot/grub2/x86_64-efi
+/dev/sdb2                     50G  3.3G   47G   7% /home
+/dev/sdb2                     50G  3.3G   47G   7% /opt
+/dev/sdb2                     50G  3.3G   47G   7% /srv
+/dev/sdb2                     50G  3.3G   47G   7% /tmp
+/dev/sdb2                     50G  3.3G   47G   7% /var
+/dev/mapper/system-rabbitmq  9.8G  433M  8.9G   5% /var/lib/rabbitmq
+/dev/mapper/system-crash      25G   32K   24G   1% /var/crash
+/dev/mapper/system-horizon    20G   24K   19G   1% /var/lib/horizon
+/dev/mapper/system-glance     49G  200K   47G   1% /var/lib/glance
+/dev/mapper/system-infra     324G  321G  3.7G  99% /var/lib/infra
+/dev/mapper/system-mysql      49G  767M   46G   2% /var/lib/mysql
+/dev/mapper/system-nova      118G   24K  112G   1% /var/lib/nova
+/dev/mapper/system-docker     25G  6.3G   17G  27% /var/lib/docker
+/dev/mapper/system-swiftobj  531G   16M  504G   1% /var/lib/swift
+/dev/mapper/system-log        20G  175M   19G   1% /var/log
+tmpfs                        128M     0  128M   0% /run/user/1000
+ceeinfra@compute-1-u4:/var/lib/swift>
+ceeinfra@compute-1-u4:/var/lib/swift>
+ceeinfra@compute-1-u4:/var/lib/swift>
+ceeinfra@compute-1-u4:/var/lib/swift> sudo mkdir VNF_ADMIN
+ceeinfra@compute-1-u4:/var/lib/swift> ls -ltr
+total 28
+drwx------ 2 42445 42445 16384 May 20 09:27 lost+found
+drwxr-xr-x 2 42445 42445  4096 May 20 13:30 lock
+drwxr-xr-x 6 42445 42445  4096 May 20 19:04 swiftobj
+drwxr-xr-x 2 root  root   4096 May 20 22:08 VNF_ADMIN
+ceeinfra@compute-1-u4:/var/lib/swift>
+ceeinfra@compute-1-u4:/var/lib/swift>
+ceeinfra@compute-1-u4:/var/lib/swift>
+ceeinfra@compute-1-u4:/var/lib/swift> sudo chown asmcs02:users VNF_ADMIN/
+ceeinfra@compute-1-u4:/var/lib/swift> ls -ltr
+total 28
+drwx------ 2   42445 42445 16384 May 20 09:27 lost+found
+drwxr-xr-x 2   42445 42445  4096 May 20 13:30 lock
+drwxr-xr-x 6   42445 42445  4096 May 20 19:04 swiftobj
+drwxr-xr-x 2 asmcs02 users  4096 May 20 22:08 VNF_ADMIN
+ceeinfra@compute-1-u4:/var/lib/swift>
+ceeinfra@compute-1-u4:/var/lib/swift>
+ceeinfra@compute-1-u4:/var/lib/swift>
+ceeinfra@compute-1-u4:/var/lib/swift> sudo chmod +777 VNF_ADMIN
+ceeinfra@compute-1-u4:/var/lib/swift> ls -ltr
+total 28
+drwx------ 2   42445 42445 16384 May 20 09:27 lost+found
+drwxr-xr-x 2   42445 42445  4096 May 20 13:30 lock
+drwxr-xr-x 6   42445 42445  4096 May 20 19:04 swiftobj
+drwxrwxrwx 2 asmcs02 users  4096 May 20 22:08 VNF_ADMIN
+ceeinfra@compute-1-u4:/var/lib/swift>
+ceeinfra@compute-1-u4:/var/lib/swift>
+ceeinfra@compute-1-u4:/var/lib/swift>
+ceeinfra@compute-1-u4:/var/lib/swift> cd VNF_ADMIN
+ceeinfra@compute-1-u4:/var/lib/swift/VNF_ADMIN>
+ceeinfra@compute-1-u4:/var/lib/swift/VNF_ADMIN>
+ceeinfra@compute-1-u4:/var/lib/swift/VNF_ADMIN> ls -ltr
+total 0
+ceeinfra@compute-1-u4:/var/lib/swift/VNF_ADMIN>
+ceeinfra@compute-1-u4:/var/lib/swift/VNF_ADMIN>
+ceeinfra@compute-1-u4:/var/lib/swift/VNF_ADMIN> mkdir test
+ceeinfra@compute-1-u4:/var/lib/swift/VNF_ADMIN> ls -ltr
+total 4
+drwxr-x--- 2 ceeinfra ceeinfra 4096 May 20 22:09 test
+ceeinfra@compute-1-u4:/var/lib/swift/VNF_ADMIN> rm -rf test
+ceeinfra@compute-1-u4:/var/lib/swift/VNF_ADMIN> ls -ltr
+total 0
+ceeinfra@compute-1-u4:/var/lib/swift/VNF_ADMIN>
+ceeinfra@compute-1-u4:/var/lib/swift/VNF_ADMIN>
+ceeinfra@compute-1-u4:/var/lib/swift/VNF_ADMIN> exit
+logout
+Connection to 192.168.0.22 closed.
+ceeinfra@infra1:~>
